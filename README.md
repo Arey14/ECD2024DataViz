@@ -27,7 +27,7 @@ Este repositorio contiene un análisis detallado y visualizaciones interactivas 
 - Análisis comparativo entre diferentes tipos de combustibles
 - Evolución temporal de precios relativos
 
-📊 **[Ver Análisis de Precios](https://arey14.github.io/ECD2024DataViz/Comparación%20precios%20relativos.html)**
+📊 **[Ver Análisis de Precios](https://arey14.github.io/ECD2024DataViz/stacked_area_chart.html)**
 
 ### 3. Bump Chart - Pregunta 2: ¿Que provincias fueron las que tuvieron los precios más caros?
 #### Parte 1: Top 5 Provincias
