@@ -18,10 +18,12 @@ Este repositorio contiene un análisis detallado y visualizaciones interactivas 
 
 👉 **[Ver EDA Completo](https://arey14.github.io/ECD2024DataViz/EDA.html)**
 
-- Datos: 2820824
-- Fechas con datos consistentes: 2017 a 2024
+- Datos historicos: 2820824
+- Fechas con datos consistentes tomados en historicos: 2017 a 2024
 
-### 2. Pregunta 1: ¿Se ve un cambio de precios relativos entre los productos? ¿Cual es el producto más caro?
+- Datos surtidor: 36706
+
+### 2. Stacked Area Relativo - Pregunta 1: ¿Se ve un cambio de precios relativos entre los productos? ¿Cual es el producto más caro?
 - Análisis comparativo entre diferentes tipos de combustibles
 - Evolución temporal de precios relativos
 
@@ -34,7 +36,7 @@ Este repositorio contiene un análisis detallado y visualizaciones interactivas 
 - Patrones de comportamiento provincial
 * Interpolación lineal para provincias con datos faltantes
 
-🏆 **[Ver Bump Chart Top 5](https://arey14.github.io/ECD2024DataViz/Bump%20chart%20top%205.png)**
+🏆 **[Ver Bump Chart Top 5](https://arey14.github.io/ECD2024DataViz/Bump%20chart%20top%205.html)**
 
 #### Parte 2: ¿Como era el ranking entre las provincias con datos completos?
 - Visualización Bump Chart de provincias con datos más completos
