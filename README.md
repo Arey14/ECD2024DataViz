@@ -8,7 +8,7 @@ Explora el análisis descriptivo y las primeras observaciones del conjunto de da
 
 ### 2. Comparación de Precios Relativos por Producto
 
-**[Ver Precios](https://arey14.github.io/ECD2024DataViz/Comparaci%C3%B3n%20precios%20relativos.png)**
+**[Ver Precios](https://arey14.github.io/ECD2024DataViz/Comparaci%C3%B3n%20precios%20relativos.html)**
 
 ### 3. Bump Chart - Provincias
  
