@@ -14,6 +14,8 @@ Explora el análisis descriptivo y las primeras observaciones del conjunto de da
  
 **[Ver Bump Chart Provincias](https://arey14.github.io/ECD2024DataViz/Bump%20chart%20top%205.png)**
 
+**[Ver Parte 2](https://arey14.github.io/bump%20chart%20provincias%20con%20datos%20completos.png)**
+
 ### 4. Heat Map Estaciones de Servicio
  
 **[Ver Heat Map](https://arey14.github.io/ECD2024DataViz/heatmap.html)**
