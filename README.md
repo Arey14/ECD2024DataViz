@@ -1,5 +1,3 @@
-# ECD2024 Data Visualization
-
 Bienvenido al repositorio de **ECD2024 Data Visualization**, donde encontrarás un conjunto de análisis y visualizaciones de datos que exploran diversos aspectos de un conjunto de datos específico.
 
 ## Análisis y Visualizaciones
