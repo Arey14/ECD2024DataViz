@@ -1,4 +1,4 @@
-Bienvenido al repositorio de **ECD2024 Data Visualization**, donde encontrarás un conjunto de análisis y visualizaciones de datos que exploran diversos aspectos de un conjunto de datos específico.
+Bienvenido al repositorio de **ECD2024 Data Visualization**, donde encontrarás el análisis y visualizacion de los datos del conjunto de datos [Precios en Surtidor](https://datos.gob.ar/dataset/energia-precios-surtidor---resolucion-3142016).
 
 ## Análisis y Visualizaciones
 
