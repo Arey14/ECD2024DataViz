@@ -23,7 +23,7 @@ Este repositorio contiene un análisis detallado y visualizaciones interactivas 
 
 - Datos surtidor: 36706
 
-### 2. Pregunta 1: ¿Se ve un cambio de precios relativos entre los productos? ¿Cual es el producto más caro?
+### 2. Stacked Area Relativo - Pregunta 1: ¿Se ve un cambio de precios relativos entre los productos? ¿Cual es el producto más caro?
 - Análisis comparativo entre diferentes tipos de combustibles
 - Evolución temporal de precios relativos
 
