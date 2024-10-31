@@ -1,0 +1,11 @@
+tipohorario,producto,count
+Diurno,GNC,1859
+Diurno,Gas Oil Grado 2,4187
+Diurno,Gas Oil Grado 3,4079
+Diurno,Nafta (premium) de más de 95 Ron,4057
+Diurno,Nafta (súper) entre 92 y 95 Ron,4171
+Nocturno,GNC,1859
+Nocturno,Gas Oil Grado 2,4187
+Nocturno,Gas Oil Grado 3,4079
+Nocturno,Nafta (premium) de más de 95 Ron,4058
+Nocturno,Nafta (súper) entre 92 y 95 Ron,4170

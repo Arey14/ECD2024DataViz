@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0910.0334                               -->
+<workbook original-version='18.1' source-build='2024.2.3 (20242.24.0910.0334)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Cuenta_Horario' inline='true' name='federated.1ybrurs0mj4irq1chv0uo1n3g9ky' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Cuenta_Horario' name='textscan.122bmzb0b2mesk19uz88z00im91p'>
+            <connection class='textscan' directory='C:/Users/maxvega/Downloads/Humo/ECD2024DataViz' filename='Cuenta_Horario.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.122bmzb0b2mesk19uz88z00im91p' name='Cuenta_Horario.csv' table='[Cuenta_Horario#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='tipohorario' ordinal='0' />
+            <column datatype='string' name='producto' ordinal='1' />
+            <column datatype='integer' name='count' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.122bmzb0b2mesk19uz88z00im91p' name='Cuenta_Horario.csv' table='[Cuenta_Horario#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='tipohorario' ordinal='0' />
+            <column datatype='string' name='producto' ordinal='1' />
+            <column datatype='integer' name='count' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Cuenta_Horario.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tipohorario</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tipohorario]</local-name>
+            <parent-name>[Cuenta_Horario.csv]</parent-name>
+            <remote-alias>tipohorario</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cuenta_Horario.csv_FAFA0824BBA74ED5BDE73F12F346D91F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>producto</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[producto]</local-name>
+            <parent-name>[Cuenta_Horario.csv]</parent-name>
+            <remote-alias>producto</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cuenta_Horario.csv_FAFA0824BBA74ED5BDE73F12F346D91F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count]</local-name>
+            <parent-name>[Cuenta_Horario.csv]</parent-name>
+            <remote-alias>count</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cuenta_Horario.csv_FAFA0824BBA74ED5BDE73F12F346D91F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Cuenta_Horario.csv' datatype='table' name='[__tableau_internal_object_id__].[Cuenta_Horario.csv_FAFA0824BBA74ED5BDE73F12F346D91F]' role='measure' type='quantitative' />
+      <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+      <column caption='Producto' datatype='string' name='[producto]' role='dimension' type='nominal' />
+      <column caption='Tipohorario' datatype='string' name='[tipohorario]' role='dimension' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='C:/Users/maxvega/Downloads/Humo/ECD2024DataViz/Cuenta_Horario.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='10/31/2024 01:46:09 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Cuenta_Horario' increment-value='%null%' refresh-type='create' rows-inserted='10' timestamp-start='2024-10-31 01:46:09.267' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>tipohorario</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tipohorario]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tipohorario</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Cuenta_Horario.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cuenta_Horario.csv_FAFA0824BBA74ED5BDE73F12F346D91F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>producto</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[producto]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>producto</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Cuenta_Horario.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cuenta_Horario.csv_FAFA0824BBA74ED5BDE73F12F346D91F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>count</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Cuenta_Horario.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cuenta_Horario.csv_FAFA0824BBA74ED5BDE73F12F346D91F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Estados Unidos Mexicanos&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Cuenta_Horario.csv' id='Cuenta_Horario.csv_FAFA0824BBA74ED5BDE73F12F346D91F'>
+            <properties context=''>
+              <relation connection='textscan.122bmzb0b2mesk19uz88z00im91p' name='Cuenta_Horario.csv' table='[Cuenta_Horario#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='tipohorario' ordinal='0' />
+                  <column datatype='string' name='producto' ordinal='1' />
+                  <column datatype='integer' name='count' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Cuenta_Horaria'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Cuenta_Horario' name='federated.1ybrurs0mj4irq1chv0uo1n3g9ky' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ybrurs0mj4irq1chv0uo1n3g9ky'>
+            <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+            <column-instance column='[producto]' derivation='None' name='[none:producto:nk]' pivot='key' type='nominal' />
+            <column-instance column='[tipohorario]' derivation='None' name='[none:tipohorario:nk]' pivot='key' type='nominal' />
+            <column caption='Producto' datatype='string' name='[producto]' role='dimension' type='nominal' />
+            <column-instance column='[count]' derivation='Sum' name='[sum:count:qk]' pivot='key' type='quantitative' />
+            <column caption='Tipohorario' datatype='string' name='[tipohorario]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1ybrurs0mj4irq1chv0uo1n3g9ky].[sum:count:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ybrurs0mj4irq1chv0uo1n3g9ky].[none:tipohorario:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ybrurs0mj4irq1chv0uo1n3g9ky].[sum:count:qk]</rows>
+        <cols>[federated.1ybrurs0mj4irq1chv0uo1n3g9ky].[none:producto:nk]</cols>
+      </table>
+      <simple-id uuid='{1E88CBDD-7665-40F4-8E77-DAF4213FF9FF}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Cuenta_Horaria'>
+      <cards>
+        <edge name='left'>
+          <strip size='248'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.1ybrurs0mj4irq1chv0uo1n3g9ky].[none:tipohorario:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ybrurs0mj4irq1chv0uo1n3g9ky].[none:count:qk]</field>
+            <field>[federated.1ybrurs0mj4irq1chv0uo1n3g9ky].[none:producto:nk]</field>
+            <field>[federated.1ybrurs0mj4irq1chv0uo1n3g9ky].[none:tipohorario:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A40E0BFA-E850-4DE3-9062-8D33E60BA5D5}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Cuenta_Horaria' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAQP0lEQVR4nO3d6W9bV3rH8e9dSIqkRGohtS+WZVve99jJeOIJMtMAMw0mGSAJChRt3xTo
+      vxFg/oi+6bsWBQbItCiaQZOZYLJ7kVdZ3q19sURJpERJlLjcpS+8JNPaskXriqTO8wEMbyTP
+      c0j97j0U76Ojua7rIoSi9FIXIEQpSQCE0iQAQmkSAKE0CYAomczCDAMDA0zNpZ9/I9chOZ/0
+      rAYJgCiZ4atfMJQs8Pnv/5OV593Isfjz5188879u/OlTJlZfrQbz1e4uxCvQNPyBKnRd49xn
+      /8bYjMHRvW303xnFNWs43RPkyuA8i4lp/ut/znNyp8FE2mTg2hXae3Yxeu4c/tUgewJLDM9n
+      CES7+PDdNzG0ly9BzgCiZFzXYXFhgbff+zUhLcCZd/4afeUhp37xPpG1Be4l5vj5L9+lOeqn
+      kC+QWV4mk5oktPMUv/jZTzmyfw8/OfsWidQSv37/V1jJBNYGP9XS5IMwUSqzozex63ppifoY
+      H7pDuKmHsJvmqy+/pWHXCXbXW3xz4Ra1jS341+bI+KL07j1A4l4fKS3GyZ4I3/WPc/pwN99f
+      6GfvyTPs7YyzgROABECorWRLIMdxSjW0EE+VLAC2bZdqaCGekjfBQmkSAKE0CYBQmgRAKE0C
+      IJQmARBKK8trgS7dneLS3YelLuOF/u6dw9SEAqUuQ7yCsgzA4GSKz/uGSl3GC33ws/0SgAon
+      SyChNAmAUFpZLoG2u88uDpLJFkpdxrritSHOHukqdRme8yYArks6mSCdg7bWOLk1m4DPJWtB
+      OChr5v/45g6JhUypy1jXwe64BKBY1mqau6NT1IZ0Rtw8hWUdv5ukum0P4aAXIwpRHE8CYPgD
+      kFthcsnhYFsn1y+fI9q9j52RILZt4zgOjuOQz+efeX+7Qi6VtqzCc+ewnkpowXBct6i5VRpP
+      ApBbXcZX28qJBp2JRJKO3UewcwmWsxaRoIlhGBQKBXw+3zPvb+iV8d7cNH34/f4N30/TNtKz
+      VBq6phU1t0rjSQACNfVEmeLWmMvRY/tYTVvUhqPMrWSoCUY31LImhJc8CYCmm/QcOEbP47+H
+      449+bw15MZoQxauMtYYQHpEACKVJAITSJABCaRIAoTQJgFCaBEAoTQIglCYBEEqTAAilSQCE
+      0iQAQmkSAKE0T64GtQtZJicmKTgasZZm/Jr5uCVSk5ZIUVa86QnWNAKBKlamR5mrCWGlbPxu
+      khppiRRlxpuWSDNAc2szibkF9jWG+dP5r6Ul8kekJbJ8ePZjUZYSY9Q0d6FrPG6JnJWWyMek
+      JbJ8eBaAvB6mo6EGyNPYVEc0HGU+Iy2Rorx4FoBYY/PjPwWIxR698W2R9b8oM5Wx1hDCIxIA
+      oTQJgFCaBEAoTQIglCYBEEqTAAilSQCE0iQAQmkSAKE0CYBQmgRAKE0CIJTm0S6RDhMPbjE6
+      l+Hw8YOspPJEgzmWnDCtsYgnQwpRDE/OANbaEomsyU/eOEVNwCG9uMzgyDT1tdVeDCdE0Txq
+      irdZSAzz9dxD2nZ3M/HgNpGuXfgNXVoikZbIcuJJAPzhMLFoPVnLQdegs/cY0UCa0ZkFulvq
+      pCVSWiLLhjeb5JlVHD5+gnzBIVAVwHVcdK0FuwKOfEItnrVEGqaf4JNHNzRvBxOiSJWx1hDC
+      IxIAoTQJgFCaBEAoTQIglCYBEEqTAAilSQCE0iQAQmkSAKE0CYBQmgRAKE0CIJTm0QWaFjcu
+      XiCV1zh49CC5JZtoVY4lV1oiRXnxJgBWDjfczNlTPWgsc3tsiblcir1Hjv5FN1QldEa9yHaY
+      w/Ns57k94dE2qSZado6v/jxK98F9TA3doqazB7+h4zg/tEQWCoVn3r2SWiKfN4f1VMIXluO6
+      Rc2t0ngSAMuycTWNgN8HrkvHnqOPWiKnF+hulZZIaYksH97sE+wPsv/QMWz3UQicuIuut2BX
+      xoFdKMSbnmBNw+cP8OT4bjxpiTS8GE2I4r1greFiFeb49qsb5Nbm+O67m1tTlRBb5AVngAIX
+      v/gjf/hymKGRdvae/qutqUqILfKCAPg588sPWcl8QjIPVi63NVUJsUVe4j1AlpzexAcfvImu
+      yyJebC8v8f1Gk9zCMJ988gkXBkY9L0iIrfQSAdBoiMXwGRpO+X9+I8SGvMQSKMjb7/0GOzPO
+      5xcWvK9IiC30EgFY47Pf/Z57iRQn3nrP+4qE2EIvdc3B/MIKe7rizM6lva5HiC31EgFwcdEJ
+      VPlx5FoGsc2suwSysstMzq/y0T/8DQ/Hx+mqbt2Soqr1LE16akvGehWGJgeESrduANKJUUZn
+      /Oxob2JHVx2ffH6PnrY3PC/qnWAfbzX8s+fjvKqw/j5QU+oyxCtYNwC1TV3Mff07/n34Gpl0
+      ipPvfLSBh3bJZXP4qvw4louhg+2CaciHaWEtS7W2Wuoy1hXU1PjUf90AGFURPvz7f6SQL6Cb
+      5oau08+lE/zh0/O8/bc/Z/rBMtXmAtR10RGTI+Zv6/4F15gqdRnrMqIngV+VugzPvcS3QTV8
+      G2yMcN0CQ+Pz9Pa0AzB+7xp1O/dyclfNy22SVyFvtguFAloxm+R5UMtmcxzZJK9omeRDhsfG
+      yaaS2O0xOnYfJJuZJWvZhHzGCzvCXEPH9qKwTebz+dCL6JrKU/4h0HXpCCtadayLd9/tIjE8
+      Qk17Mwtalu72MHPJJTqa6yj/hkChCk/3rWva2Q1AqC0IQGfUy9GE2LjK6D4XwiOyc6nYVPOL
+      q3x1fbTUZazL0DV+c3YfIAEQmyyxmOFf/3ij1GWsy2foTwMgSyChNAmAUJoEQChNAiCUJgEQ
+      SpMACKVJAITSJABCaRIAoTQJgFCaJ5dCuHaeuwPXSeV8HDu+j8xinkjQJl3w0VhX7cWQQhTF
+      kzOAi05X7yF6Gg0mp+eZm1vkwYMRQqGgF8MJUTRPzgC6YbI4fZf7E2kOHG/n6tXviezoJew3
+      pCWS8u8Gg+JbIi2rMjbWezI3TwJQyGXIuyFa4xbz8yk6e49RRZKHqRVaG6qlJZLyD0GxLZGm
+      +ezXtNw8mZsnATB9AYJVJlqgibbWOIWcQ8DXSCZfGUd2oQ5vNsnTTZraOn8Y5PHSv0a6D0SZ
+      kW+DCqVJAITSJABCaRIAoTQJgFCaBEAoTQIglCYBEEqTAAilSQCE0iQAQmkSAKE0CYBQmjct
+      kY7N+OBtJpM5jpw4wFq6QKTKIm35pSVSlBXPAhCOdXCgNsXD6QTWik4iP8+OA0e8GE6IonnU
+      EunDZ68yteCyq6eOLz/95lFLpE9aIqH8u8FAWiJfiZ1b4sbdETo6O8jmC49aIjVpiXxCWiJL
+      z9OWSM0MsrOrlbzt4LohduyIEPA1siotkdteVMvwZqC/1GWsyzBN4CPAqyWQ6aets/v//Xu1
+      tERue81mkn+K/Hepy1if4Qd+C8i3QYXiJABCaRIAoTQJgFCaBEAoTQIglCYBEEqTAAilSQCE
+      0iQAQmkSAKE0CYBQmgRAKM2b6zOtHLfv9JMhzmuHYty/v0Jt1RJrgWa6mqKeDClEMbwJgBlg
+      /6FD3L2TAFwSE4Ok62McPxrFcRxc18V1XSzLeubdHafc20UesW0b5zlzqHTrvT7rcexKaGXi
+      6dy25Ar9YDiCnV/DcV1MTQNA0zR0/dkrsMc3KXvrzaHyFTc3V6uM5+PJ3DwJgFNY4/rVi0zM
+      ZAjUHaWhqZVYTY6J6RTdbQ3omoZt2+sEoDISoOv6tg2AplHU3By9cl478KojzBfk+Om3OP5/
+      /r3Gi8GEeAXb8/AlxEuSAAilSQCE0iQAQmkSAKE0CYBQmgRAKE0CIJQmARBKkwAIpXlzMZxr
+      8+DmdWaWXU6c2s9CIks0mGPJCdMai3gypBDF8OQMkF9Jk/XXcnhXPVNTc6QXlxkamaa+VrZH
+      EuXFkwA4tktVMIA/WI1TyDLxYIBVPYTfkBWXKC+efEX6w0GS48NcvnqTSCxGZ+8xuqIOozML
+      Zb8zilCLZ5dDnzx1moIDVVV+GmtcdK0Fu0I6vYQ6POoI0zD9gacPbhiPmiRMnUcb5D1uibSf
+      0z7n1rRB++velLaJHM3ELaIFUGs5hhvp8KCiTRTb89zXZz2OGS77107Tzadz01zX3dLDsvuj
+      L37DMLZy6C21nefnOA6aplVM5956tnzXridPnOM427adENj284PiWibLzZafAYQoJ2W/b6NT
+      WOXyxUusWtDZe5idLXXPvJ29luLbc9dwXIfO/a9Rp69Sba5yc6WREzsiTA/d5M74HGZ1nLOv
+      HXzOaC7Dd+/TvreXH++Qm5x8wMDQFK4Z5eyZY2zmwmZ5doxLA0P4giGOnnidmsCz60qM3GZg
+      OIFuBjj1+mssJxdJLzykY9chQj6LaxcuslRwae3ez57O+HNGW+Pe3Vl693b98Miuy60r3zG3
+      mKFp92n2dz37+d0qjrXG1b4+VvLQvvsg2al+7Nq9uKvT7Olup+/yTXyhBk6+cZRnPlUbZHz8
+      8ccfb8LjeCY9P40WbaO+ysZfXUdmZoir/bfxReIM93/P8OwabU0xZsfHiO8+xKG9HYwOTuJ3
+      bELVMJsN01pXxeDYJEf27SKTcwj5cwxcHiBn+hm8cZWx5CoNQYeLFy8zlVwjHtG4dPkaqYxD
+      U7yOUKSe5voa1iyXpng9m7nyHXswwp4jB8mtrtFQH+HWlT6GH84TCTic67uGZVbTEKlibHSG
+      46+/QZ3PYjFvkV3KYttr1DY04aSnWQ610Fqto1dFSE4N8mB0Gp+9wpXrN7B9UTIz97l28y6W
+      GSE7P8KNO4OY4Xqi4QBBv8lSJktdvJXa8MY3x95MKwuz2FWNxKvBDEWxLJdad4mVgoOeX6Vp
+      /2n27WzdtCN32S/iDE0jn88TjzWQXEyTWkjhrKUYmkpimCbZzCq26+IzdbL5AraVx9UNMstL
+      f7HbvOtYmMEIVnaFQj5LfXsvzWGHlbUC4/cHSaTm2HP8p+xub2B8eo4Tr58hUJhnzYJMepax
+      mQz79/Rs+hOmaw4FLUBjMMdMKsPSWp7Zh6Ms5zV0XDIrq7hoaJqDZTsUrAK6DsvLmR8ew9DJ
+      ZfPUNzewOLfI6mqBw0cOkVlK4zprDA6Os5jXefPNN4hoWVJWiDOnjjA7M4nruvjDdezobCSd
+      Sm/y7DZO13Ty+TyxWJyFxQXQdKraekhm8pimQT5XwLHtTfs8qewDUB1rxk6N09d/j0CgCr/P
+      R6C6jtrqKvTHP5jK1aChvZP5B/18e/4GbTs6CNXUYJhBaoKPjhU9bXHOn79AOuvgC4Spi4bR
+      dBPDMGlqbiQSqeXO5W+ZXbHoaolz5cL35HwxgibMT44wMTnC5au3KWzy/Nq7O7l76Tz3pjJE
+      QwamodMQb8TQtUe/DB3QaW9t4PK5bxiey9LUUEt1TZhwuBpd1/DXthBanaKv7yZGqIpIfYyg
+      z8Dn92EGqonVRQiR49z5q7ihOuqNDN/39RNvbgcK3Om/wq17k0RqS/+Da0K1MbSVh1y8fhuf
+      P0QoFCJqWOBoNLTtYPr2RS5cvrVpr4O8CRZKK/szgBBekgAIpUkAhNIkAEJpEgChNAmAUJoE
+      QCjtfwEksxLu8LrFWwAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
