@@ -38,7 +38,7 @@ Este repositorio contiene un análisis detallado y visualizaciones interactivas 
 - Tendencias y patrones generales
 - Comparativa integral
 
-📈 **[Ver Análisis Provincial Completo](https://arey14.github.io/ECD2024DataViz/bump%20chart%20provincias%20con%20datos%20completos.png)**
+📈 **[Ver Análisis Provincial Completo](https://arey14.github.io/ECD2024DataViz/bump%20chart%20provincias%20con%20datos%20completos.html)**
 
 ### 4. Heat Map - Distribución de Estaciones de Servicio
 - Densidad de estaciones por región
