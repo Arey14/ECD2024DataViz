@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+</head>
+<body>
+  <div id="vis"/>
+  <script>
+    const spec = {
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "data": [
+    {"name": "param_4_store"},
+    {"name": "param_5_store"},
+    {
+      "name": "source_0",
+      "values": [
+        {
+          "provincia": "BUENOS AIRES",
+          "año": 2017,
+          "precio": 17.08306329113924,
+          "ranking": 5,
+          "iniciales": "BA"
+        },
+        {
+          "provincia": "BUENOS AIRES",
+          "año": 2018,
+          "precio": 29.63595744680851,
+          "ranking": 4,
+          "iniciales": "BA"
+        },
+        {
+          "provincia": "BUENOS AIRES",
+          "año": 2019,
+          "precio": 43.69191489361702,
+          "ranking": 5,
+          "iniciales": "BA"
+        },
+        {
+          "provincia": "BUENOS AIRES",
+          "año": 2020,
+          "precio": 56.65387096774194,
+          "ranking": 3,
+          "iniciales": "BA"
+        },
+        {
+          "provincia": "BUENOS AIRES",
+          "año": 2021,
+          "precio": 86.66465040650407,
+          "ranking": 7,
+          "iniciales": "BA"
+        },
+        {
+          "provincia": "BUENOS AIRES",
+          "año": 2022,
+          "precio": 144.15481927710843,
+          "ranking": 5,
+          "iniciales": "BA"
+        },
+        {
+          "provincia": "BUENOS AIRES",
+          "año": 2023,
+          "precio": 361.1808823529412,
+          "ranking": 1,
+          "iniciales": "BA"
+        },
+        {
+          "provincia": "BUENOS AIRES",
+          "año": 2024,
+          "precio": 1169.5851730784057,
+          "ranking": 5,
+          "iniciales": "BA"
+        },
+        {
+          "provincia": "CHACO",
+          "año": 2017,
+          "precio": 22.45,
+          "ranking": 1,
+          "iniciales": "CH"
+        },
+        {
+          "provincia": "CHACO",
+          "año": 2018,
+          "precio": 29.6,
+          "ranking": 5,
+          "iniciales": "CH"
+        },
+        {
+          "provincia": "CHACO",
+          "año": 2019,
+          "precio": 48.7,
+          "ranking": 2,
+          "iniciales": "CH"
+        },
+        {
+          "provincia": "CHACO",
+          "año": 2020,
+          "precio": 56.31,
+          "ranking": 4,
+          "iniciales": "CH"
+        },
+        {
+          "provincia": "CHACO",
+          "año": 2021,
+          "precio": 111.8,
+          "ranking": 1,
+          "iniciales": "CH"
+        },
+        {
+          "provincia": "CHACO",
+          "año": 2022,
+          "precio": 285,
+          "ranking": 1,
+          "iniciales": "CH"
+        },
+        {
+          "provincia": "CHACO",
+          "año": 2023,
+          "precio": 338.2416666666667,
+          "ranking": 2,
+          "iniciales": "CH"
+        },
+        {
+          "provincia": "CHACO",
+          "año": 2024,
+          "precio": 1289.7912457912455,
+          "ranking": 1,
+          "iniciales": "CH"
+        },
+        {
+          "provincia": "CORDOBA",
+          "año": 2017,
+          "precio": 18.31558823529412,
+          "ranking": 4,
+          "iniciales": "CO"
+        },
+        {
+          "provincia": "CORDOBA",
+          "año": 2018,
+          "precio": 31.111904761904764,
+          "ranking": 2,
+          "iniciales": "CO"
+        },
+        {
+          "provincia": "CORDOBA",
+          "año": 2019,
+          "precio": 44.47125,
+          "ranking": 4,
+          "iniciales": "CO"
+        },
+        {
+          "provincia": "CORDOBA",
+          "año": 2020,
+          "precio": 54.876666666666665,
+          "ranking": 5,
+          "iniciales": "CO"
+        },
+        {
+          "provincia": "CORDOBA",
+          "año": 2021,
+          "precio": 93.7995,
+          "ranking": 4,
+          "iniciales": "CO"
+        },
+        {
+          "provincia": "CORDOBA",
+          "año": 2022,
+          "precio": 125.95685714285712,
+          "ranking": 7,
+          "iniciales": "CO"
+        },
+        {
+          "provincia": "CORDOBA",
+          "año": 2023,
+          "precio": 338.2054700854701,
+          "ranking": 3,
+          "iniciales": "CO"
+        },
+        {
+          "provincia": "CORDOBA",
+          "año": 2024,
+          "precio": 1186.765174249758,
+          "ranking": 4,
+          "iniciales": "CO"
+        },
+        {
+          "provincia": "ENTRE RIOS",
+          "año": 2017,
+          "precio": 20.55,
+          "ranking": 2,
+          "iniciales": "ER"
+        },
+        {
+          "provincia": "ENTRE RIOS",
+          "año": 2018,
+          "precio": 50,
+          "ranking": 1,
+          "iniciales": "ER"
+        },
+        {
+          "provincia": "ENTRE RIOS",
+          "año": 2019,
+          "precio": 29.99,
+          "ranking": 7,
+          "iniciales": "ER"
+        },
+        {
+          "provincia": "ENTRE RIOS",
+          "año": 2020,
+          "precio": 59.78,
+          "ranking": 2,
+          "iniciales": "ER"
+        },
+        {
+          "provincia": "ENTRE RIOS",
+          "año": 2021,
+          "precio": 102.6,
+          "ranking": 2,
+          "iniciales": "ER"
+        },
+        {
+          "provincia": "ENTRE RIOS",
+          "año": 2022,
+          "precio": 167.87,
+          "ranking": 2,
+          "iniciales": "ER"
+        },
+        {
+          "provincia": "ENTRE RIOS",
+          "año": 2023,
+          "precio": 193.6,
+          "ranking": 7,
+          "iniciales": "ER"
+        },
+        {
+          "provincia": "ENTRE RIOS",
+          "año": 2024,
+          "precio": 1230.5189909443727,
+          "ranking": 2,
+          "iniciales": "ER"
+        },
+        {
+          "provincia": "MENDOZA",
+          "año": 2017,
+          "precio": 13.381666666666668,
+          "ranking": 6,
+          "iniciales": "ME"
+        },
+        {
+          "provincia": "MENDOZA",
+          "año": 2018,
+          "precio": 22.47,
+          "ranking": 6,
+          "iniciales": "ME"
+        },
+        {
+          "provincia": "MENDOZA",
+          "año": 2019,
+          "precio": 32.00545454545455,
+          "ranking": 6,
+          "iniciales": "ME"
+        },
+        {
+          "provincia": "MENDOZA",
+          "año": 2020,
+          "precio": 47.105,
+          "ranking": 6,
+          "iniciales": "ME"
+        },
+        {
+          "provincia": "MENDOZA",
+          "año": 2021,
+          "precio": 91.475,
+          "ranking": 5,
+          "iniciales": "ME"
+        },
+        {
+          "provincia": "MENDOZA",
+          "año": 2022,
+          "precio": 127.17235294117646,
+          "ranking": 6,
+          "iniciales": "ME"
+        },
+        {
+          "provincia": "MENDOZA",
+          "año": 2023,
+          "precio": 333.5647058823529,
+          "ranking": 4,
+          "iniciales": "ME"
+        },
+        {
+          "provincia": "MENDOZA",
+          "año": 2024,
+          "precio": 1097.9108785942492,
+          "ranking": 7,
+          "iniciales": "ME"
+        },
+        {
+          "provincia": "SANTA FE",
+          "año": 2017,
+          "precio": 19.804732142857144,
+          "ranking": 3,
+          "iniciales": "SF"
+        },
+        {
+          "provincia": "SANTA FE",
+          "año": 2018,
+          "precio": 30.16590909090909,
+          "ranking": 3,
+          "iniciales": "SF"
+        },
+        {
+          "provincia": "SANTA FE",
+          "año": 2019,
+          "precio": 50.47932608695652,
+          "ranking": 1,
+          "iniciales": "SF"
+        },
+        {
+          "provincia": "SANTA FE",
+          "año": 2020,
+          "precio": 63.60454545454545,
+          "ranking": 1,
+          "iniciales": "SF"
+        },
+        {
+          "provincia": "SANTA FE",
+          "año": 2021,
+          "precio": 99.45133333333334,
+          "ranking": 3,
+          "iniciales": "SF"
+        },
+        {
+          "provincia": "SANTA FE",
+          "año": 2022,
+          "precio": 155.30875,
+          "ranking": 3,
+          "iniciales": "SF"
+        },
+        {
+          "provincia": "SANTA FE",
+          "año": 2023,
+          "precio": 316.3318918918919,
+          "ranking": 5,
+          "iniciales": "SF"
+        },
+        {
+          "provincia": "SANTA FE",
+          "año": 2024,
+          "precio": 1215.2453684210527,
+          "ranking": 3,
+          "iniciales": "SF"
+        },
+        {
+          "provincia": "TUCUMAN",
+          "año": 2017,
+          "precio": 10.89,
+          "ranking": 7,
+          "iniciales": "TU"
+        },
+        {
+          "provincia": "TUCUMAN",
+          "año": 2018,
+          "precio": 19.46,
+          "ranking": 7,
+          "iniciales": "TU"
+        },
+        {
+          "provincia": "TUCUMAN",
+          "año": 2019,
+          "precio": 45.001666666666665,
+          "ranking": 3,
+          "iniciales": "TU"
+        },
+        {
+          "provincia": "TUCUMAN",
+          "año": 2020,
+          "precio": 22.99,
+          "ranking": 7,
+          "iniciales": "TU"
+        },
+        {
+          "provincia": "TUCUMAN",
+          "año": 2021,
+          "precio": 88.77499999999999,
+          "ranking": 6,
+          "iniciales": "TU"
+        },
+        {
+          "provincia": "TUCUMAN",
+          "año": 2022,
+          "precio": 148.8941176470588,
+          "ranking": 4,
+          "iniciales": "TU"
+        },
+        {
+          "provincia": "TUCUMAN",
+          "año": 2023,
+          "precio": 224.37692307692308,
+          "ranking": 6,
+          "iniciales": "TU"
+        },
+        {
+          "provincia": "TUCUMAN",
+          "año": 2024,
+          "precio": 1142.6072649572648,
+          "ranking": 6,
+          "iniciales": "TU"
+        }
+      ]
+    },
+    {
+      "name": "data_0",
+      "values": [
+        {
+          "año": 2017,
+          "precio": 17.08306329113924,
+          "provincia": "BUENOS AIRES",
+          "ranking": 5
+        },
+        {
+          "año": 2018,
+          "precio": 29.63595744680851,
+          "provincia": "BUENOS AIRES",
+          "ranking": 4
+        },
+        {
+          "año": 2019,
+          "precio": 43.69191489361702,
+          "provincia": "BUENOS AIRES",
+          "ranking": 5
+        },
+        {
+          "año": 2020,
+          "precio": 56.65387096774194,
+          "provincia": "BUENOS AIRES",
+          "ranking": 3
+        },
+        {
+          "año": 2021,
+          "precio": 86.66465040650407,
+          "provincia": "BUENOS AIRES",
+          "ranking": 7
+        },
+        {
+          "año": 2022,
+          "precio": 144.15481927710843,
+          "provincia": "BUENOS AIRES",
+          "ranking": 5
+        },
+        {
+          "año": 2023,
+          "precio": 361.1808823529412,
+          "provincia": "BUENOS AIRES",
+          "ranking": 1
+        },
+        {
+          "año": 2024,
+          "precio": 1169.5851730784057,
+          "provincia": "BUENOS AIRES",
+          "ranking": 5
+        },
+        {"año": 2017, "precio": 22.45, "provincia": "CHACO", "ranking": 1},
+        {"año": 2018, "precio": 29.6, "provincia": "CHACO", "ranking": 5},
+        {"año": 2019, "precio": 48.7, "provincia": "CHACO", "ranking": 2},
+        {"año": 2020, "precio": 56.31, "provincia": "CHACO", "ranking": 4},
+        {"año": 2021, "precio": 111.8, "provincia": "CHACO", "ranking": 1},
+        {"año": 2022, "precio": 285, "provincia": "CHACO", "ranking": 1},
+        {
+          "año": 2023,
+          "precio": 338.2416666666667,
+          "provincia": "CHACO",
+          "ranking": 2
+        },
+        {
+          "año": 2024,
+          "precio": 1289.7912457912455,
+          "provincia": "CHACO",
+          "ranking": 1
+        },
+        {
+          "año": 2017,
+          "precio": 18.31558823529412,
+          "provincia": "CORDOBA",
+          "ranking": 4
+        },
+        {
+          "año": 2018,
+          "precio": 31.111904761904764,
+          "provincia": "CORDOBA",
+          "ranking": 2
+        },
+        {"año": 2019, "precio": 44.47125, "provincia": "CORDOBA", "ranking": 4},
+        {
+          "año": 2020,
+          "precio": 54.876666666666665,
+          "provincia": "CORDOBA",
+          "ranking": 5
+        },
+        {"año": 2021, "precio": 93.7995, "provincia": "CORDOBA", "ranking": 4},
+        {
+          "año": 2022,
+          "precio": 125.95685714285712,
+          "provincia": "CORDOBA",
+          "ranking": 7
+        },
+        {
+          "año": 2023,
+          "precio": 338.2054700854701,
+          "provincia": "CORDOBA",
+          "ranking": 3
+        },
+        {
+          "año": 2024,
+          "precio": 1186.765174249758,
+          "provincia": "CORDOBA",
+          "ranking": 4
+        },
+        {"año": 2017, "precio": 20.55, "provincia": "ENTRE RIOS", "ranking": 2},
+        {"año": 2018, "precio": 50, "provincia": "ENTRE RIOS", "ranking": 1},
+        {"año": 2019, "precio": 29.99, "provincia": "ENTRE RIOS", "ranking": 7},
+        {"año": 2020, "precio": 59.78, "provincia": "ENTRE RIOS", "ranking": 2},
+        {"año": 2021, "precio": 102.6, "provincia": "ENTRE RIOS", "ranking": 2},
+        {
+          "año": 2022,
+          "precio": 167.87,
+          "provincia": "ENTRE RIOS",
+          "ranking": 2
+        },
+        {"año": 2023, "precio": 193.6, "provincia": "ENTRE RIOS", "ranking": 7},
+        {
+          "año": 2024,
+          "precio": 1230.5189909443727,
+          "provincia": "ENTRE RIOS",
+          "ranking": 2
+        },
+        {
+          "año": 2017,
+          "precio": 13.381666666666668,
+          "provincia": "MENDOZA",
+          "ranking": 6
+        },
+        {"año": 2018, "precio": 22.47, "provincia": "MENDOZA", "ranking": 6},
+        {
+          "año": 2019,
+          "precio": 32.00545454545455,
+          "provincia": "MENDOZA",
+          "ranking": 6
+        },
+        {"año": 2020, "precio": 47.105, "provincia": "MENDOZA", "ranking": 6},
+        {"año": 2021, "precio": 91.475, "provincia": "MENDOZA", "ranking": 5},
+        {
+          "año": 2022,
+          "precio": 127.17235294117646,
+          "provincia": "MENDOZA",
+          "ranking": 6
+        },
+        {
+          "año": 2023,
+          "precio": 333.5647058823529,
+          "provincia": "MENDOZA",
+          "ranking": 4
+        },
+        {
+          "año": 2024,
+          "precio": 1097.9108785942492,
+          "provincia": "MENDOZA",
+          "ranking": 7
+        },
+        {
+          "año": 2017,
+          "precio": 19.804732142857144,
+          "provincia": "SANTA FE",
+          "ranking": 3
+        },
+        {
+          "año": 2018,
+          "precio": 30.16590909090909,
+          "provincia": "SANTA FE",
+          "ranking": 3
+        },
+        {
+          "año": 2019,
+          "precio": 50.47932608695652,
+          "provincia": "SANTA FE",
+          "ranking": 1
+        },
+        {
+          "año": 2020,
+          "precio": 63.60454545454545,
+          "provincia": "SANTA FE",
+          "ranking": 1
+        },
+        {
+          "año": 2021,
+          "precio": 99.45133333333334,
+          "provincia": "SANTA FE",
+          "ranking": 3
+        },
+        {
+          "año": 2022,
+          "precio": 155.30875,
+          "provincia": "SANTA FE",
+          "ranking": 3
+        },
+        {
+          "año": 2023,
+          "precio": 316.3318918918919,
+          "provincia": "SANTA FE",
+          "ranking": 5
+        },
+        {
+          "año": 2024,
+          "precio": 1215.2453684210527,
+          "provincia": "SANTA FE",
+          "ranking": 3
+        },
+        {"año": 2017, "precio": 10.89, "provincia": "TUCUMAN", "ranking": 7},
+        {"año": 2018, "precio": 19.46, "provincia": "TUCUMAN", "ranking": 7},
+        {
+          "año": 2019,
+          "precio": 45.001666666666665,
+          "provincia": "TUCUMAN",
+          "ranking": 3
+        },
+        {"año": 2020, "precio": 22.99, "provincia": "TUCUMAN", "ranking": 7},
+        {
+          "año": 2021,
+          "precio": 88.77499999999999,
+          "provincia": "TUCUMAN",
+          "ranking": 6
+        },
+        {
+          "año": 2022,
+          "precio": 148.8941176470588,
+          "provincia": "TUCUMAN",
+          "ranking": 4
+        },
+        {
+          "año": 2023,
+          "precio": 224.37692307692308,
+          "provincia": "TUCUMAN",
+          "ranking": 6
+        },
+        {
+          "año": 2024,
+          "precio": 1142.6072649572648,
+          "provincia": "TUCUMAN",
+          "ranking": 6
+        }
+      ]
+    },
+    {
+      "name": "data_1",
+      "values": [
+        {
+          "año": 2017,
+          "iniciales": "BA",
+          "provincia": "BUENOS AIRES",
+          "ranking": 5
+        },
+        {
+          "año": 2018,
+          "iniciales": "BA",
+          "provincia": "BUENOS AIRES",
+          "ranking": 4
+        },
+        {
+          "año": 2019,
+          "iniciales": "BA",
+          "provincia": "BUENOS AIRES",
+          "ranking": 5
+        },
+        {
+          "año": 2020,
+          "iniciales": "BA",
+          "provincia": "BUENOS AIRES",
+          "ranking": 3
+        },
+        {
+          "año": 2021,
+          "iniciales": "BA",
+          "provincia": "BUENOS AIRES",
+          "ranking": 7
+        },
+        {
+          "año": 2022,
+          "iniciales": "BA",
+          "provincia": "BUENOS AIRES",
+          "ranking": 5
+        },
+        {
+          "año": 2023,
+          "iniciales": "BA",
+          "provincia": "BUENOS AIRES",
+          "ranking": 1
+        },
+        {
+          "año": 2024,
+          "iniciales": "BA",
+          "provincia": "BUENOS AIRES",
+          "ranking": 5
+        },
+        {"año": 2017, "iniciales": "CH", "provincia": "CHACO", "ranking": 1},
+        {"año": 2018, "iniciales": "CH", "provincia": "CHACO", "ranking": 5},
+        {"año": 2019, "iniciales": "CH", "provincia": "CHACO", "ranking": 2},
+        {"año": 2020, "iniciales": "CH", "provincia": "CHACO", "ranking": 4},
+        {"año": 2021, "iniciales": "CH", "provincia": "CHACO", "ranking": 1},
+        {"año": 2022, "iniciales": "CH", "provincia": "CHACO", "ranking": 1},
+        {"año": 2023, "iniciales": "CH", "provincia": "CHACO", "ranking": 2},
+        {"año": 2024, "iniciales": "CH", "provincia": "CHACO", "ranking": 1},
+        {"año": 2017, "iniciales": "CO", "provincia": "CORDOBA", "ranking": 4},
+        {"año": 2018, "iniciales": "CO", "provincia": "CORDOBA", "ranking": 2},
+        {"año": 2019, "iniciales": "CO", "provincia": "CORDOBA", "ranking": 4},
+        {"año": 2020, "iniciales": "CO", "provincia": "CORDOBA", "ranking": 5},
+        {"año": 2021, "iniciales": "CO", "provincia": "CORDOBA", "ranking": 4},
+        {"año": 2022, "iniciales": "CO", "provincia": "CORDOBA", "ranking": 7},
+        {"año": 2023, "iniciales": "CO", "provincia": "CORDOBA", "ranking": 3},
+        {"año": 2024, "iniciales": "CO", "provincia": "CORDOBA", "ranking": 4},
+        {
+          "año": 2017,
+          "iniciales": "ER",
+          "provincia": "ENTRE RIOS",
+          "ranking": 2
+        },
+        {
+          "año": 2018,
+          "iniciales": "ER",
+          "provincia": "ENTRE RIOS",
+          "ranking": 1
+        },
+        {
+          "año": 2019,
+          "iniciales": "ER",
+          "provincia": "ENTRE RIOS",
+          "ranking": 7
+        },
+        {
+          "año": 2020,
+          "iniciales": "ER",
+          "provincia": "ENTRE RIOS",
+          "ranking": 2
+        },
+        {
+          "año": 2021,
+          "iniciales": "ER",
+          "provincia": "ENTRE RIOS",
+          "ranking": 2
+        },
+        {
+          "año": 2022,
+          "iniciales": "ER",
+          "provincia": "ENTRE RIOS",
+          "ranking": 2
+        },
+        {
+          "año": 2023,
+          "iniciales": "ER",
+          "provincia": "ENTRE RIOS",
+          "ranking": 7
+        },
+        {
+          "año": 2024,
+          "iniciales": "ER",
+          "provincia": "ENTRE RIOS",
+          "ranking": 2
+        },
+        {"año": 2017, "iniciales": "ME", "provincia": "MENDOZA", "ranking": 6},
+        {"año": 2018, "iniciales": "ME", "provincia": "MENDOZA", "ranking": 6},
+        {"año": 2019, "iniciales": "ME", "provincia": "MENDOZA", "ranking": 6},
+        {"año": 2020, "iniciales": "ME", "provincia": "MENDOZA", "ranking": 6},
+        {"año": 2021, "iniciales": "ME", "provincia": "MENDOZA", "ranking": 5},
+        {"año": 2022, "iniciales": "ME", "provincia": "MENDOZA", "ranking": 6},
+        {"año": 2023, "iniciales": "ME", "provincia": "MENDOZA", "ranking": 4},
+        {"año": 2024, "iniciales": "ME", "provincia": "MENDOZA", "ranking": 7},
+        {"año": 2017, "iniciales": "SF", "provincia": "SANTA FE", "ranking": 3},
+        {"año": 2018, "iniciales": "SF", "provincia": "SANTA FE", "ranking": 3},
+        {"año": 2019, "iniciales": "SF", "provincia": "SANTA FE", "ranking": 1},
+        {"año": 2020, "iniciales": "SF", "provincia": "SANTA FE", "ranking": 1},
+        {"año": 2021, "iniciales": "SF", "provincia": "SANTA FE", "ranking": 3},
+        {"año": 2022, "iniciales": "SF", "provincia": "SANTA FE", "ranking": 3},
+        {"año": 2023, "iniciales": "SF", "provincia": "SANTA FE", "ranking": 5},
+        {"año": 2024, "iniciales": "SF", "provincia": "SANTA FE", "ranking": 3},
+        {"año": 2017, "iniciales": "TU", "provincia": "TUCUMAN", "ranking": 7},
+        {"año": 2018, "iniciales": "TU", "provincia": "TUCUMAN", "ranking": 7},
+        {"año": 2019, "iniciales": "TU", "provincia": "TUCUMAN", "ranking": 3},
+        {"año": 2020, "iniciales": "TU", "provincia": "TUCUMAN", "ranking": 7},
+        {"año": 2021, "iniciales": "TU", "provincia": "TUCUMAN", "ranking": 6},
+        {"año": 2022, "iniciales": "TU", "provincia": "TUCUMAN", "ranking": 4},
+        {"año": 2023, "iniciales": "TU", "provincia": "TUCUMAN", "ranking": 6},
+        {"año": 2024, "iniciales": "TU", "provincia": "TUCUMAN", "ranking": 6}
+      ]
+    },
+    {
+      "name": "source_0_x_domain_año_0",
+      "values": [
+        {"año": 2017},
+        {"año": 2018},
+        {"año": 2019},
+        {"año": 2020},
+        {"año": 2021},
+        {"año": 2022},
+        {"año": 2023},
+        {"año": 2024}
+      ]
+    },
+    {
+      "name": "data_0_x_domain_año_1",
+      "values": [
+        {"año": 2017},
+        {"año": 2018},
+        {"año": 2019},
+        {"año": 2020},
+        {"año": 2021},
+        {"año": 2022},
+        {"año": 2023},
+        {"año": 2024}
+      ]
+    },
+    {
+      "name": "data_1_x_domain_año_2",
+      "values": [
+        {"año": 2017},
+        {"año": 2018},
+        {"año": 2019},
+        {"año": 2020},
+        {"año": 2021},
+        {"año": 2022},
+        {"año": 2023},
+        {"año": 2024}
+      ]
+    },
+    {
+      "name": "source_0_color_domain_provincia_0",
+      "values": [
+        {"provincia": "BUENOS AIRES"},
+        {"provincia": "CHACO"},
+        {"provincia": "CORDOBA"},
+        {"provincia": "ENTRE RIOS"},
+        {"provincia": "MENDOZA"},
+        {"provincia": "SANTA FE"},
+        {"provincia": "TUCUMAN"}
+      ]
+    },
+    {
+      "name": "data_0_color_domain_provincia_1",
+      "values": [
+        {"provincia": "BUENOS AIRES"},
+        {"provincia": "CHACO"},
+        {"provincia": "CORDOBA"},
+        {"provincia": "ENTRE RIOS"},
+        {"provincia": "MENDOZA"},
+        {"provincia": "SANTA FE"},
+        {"provincia": "TUCUMAN"}
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "name": "unit",
+      "value": {},
+      "on": [
+        {"events": "pointermove", "update": "isTuple(group()) ? group() : unit"}
+      ]
+    },
+    {
+      "name": "param_5_provincia_legend",
+      "value": null,
+      "on": [
+        {
+          "events": [
+            {
+              "source": "view",
+              "markname": "provincia_legend_symbols",
+              "type": "click"
+            },
+            {
+              "source": "view",
+              "markname": "provincia_legend_labels",
+              "type": "click"
+            },
+            {
+              "source": "view",
+              "markname": "provincia_legend_entries",
+              "type": "click"
+            }
+          ],
+          "update": "isDefined(datum.value) ? datum.value : item().items[0].items[0].datum.value",
+          "force": true
+        },
+        {
+          "events": [{"source": "view", "type": "click"}],
+          "update": "!event.item || !datum ? null : param_5_provincia_legend",
+          "force": true
+        }
+      ]
+    },
+    {"name": "param_4", "update": "{\"ranking\": param_4_ranking}"},
+    {"name": "param_4_ranking"},
+    {
+      "name": "param_5",
+      "update": "vlSelectionResolve(\"param_5_store\", \"union\", true, true)"
+    },
+    {
+      "name": "param_4_a_o",
+      "on": [
+        {"events": [{"source": "view", "type": "dblclick"}], "update": "null"},
+        {
+          "events": {"signal": "param_4_translate_delta"},
+          "update": "panLinear(param_4_translate_anchor.extent_x, -param_4_translate_delta.x / width)"
+        },
+        {
+          "events": {"signal": "param_4_zoom_delta"},
+          "update": "zoomLinear(domain(\"x\"), param_4_zoom_anchor.x, param_4_zoom_delta)"
+        }
+      ]
+    },
+    {
+      "name": "param_4_ranking",
+      "on": [
+        {"events": [{"source": "view", "type": "dblclick"}], "update": "null"},
+        {
+          "events": {"signal": "param_4_translate_delta"},
+          "update": "panLinear(param_4_translate_anchor.extent_y, -param_4_translate_delta.y / height)"
+        },
+        {
+          "events": {"signal": "param_4_zoom_delta"},
+          "update": "zoomLinear(domain(\"y\"), param_4_zoom_anchor.y, param_4_zoom_delta)"
+        }
+      ],
+      "push": "outer"
+    },
+    {
+      "name": "param_4_tuple",
+      "on": [
+        {
+          "events": [{"signal": "param_4_a_o || param_4_ranking"}],
+          "update": "param_4_a_o && param_4_ranking ? {unit: \"view_1\", fields: param_4_tuple_fields, values: [param_4_a_o,param_4_ranking]} : null"
+        }
+      ]
+    },
+    {
+      "name": "param_4_tuple_fields",
+      "value": [
+        {"field": "año", "channel": "x", "type": "E"},
+        {"field": "ranking", "channel": "y", "type": "R"}
+      ]
+    },
+    {
+      "name": "param_4_translate_anchor",
+      "value": {},
+      "on": [
+        {
+          "events": [{"source": "scope", "type": "pointerdown"}],
+          "update": "{x: x(unit), y: y(unit), extent_x: domain(\"x\"), extent_y: domain(\"y\")}"
+        }
+      ]
+    },
+    {
+      "name": "param_4_translate_delta",
+      "value": {},
+      "on": [
+        {
+          "events": [
+            {
+              "source": "window",
+              "between": [
+                {"source": "scope", "type": "pointerdown"},
+                {"source": "window", "type": "pointerup"}
+              ],
+              "type": "pointermove",
+              "consume": true
+            }
+          ],
+          "update": "{x: param_4_translate_anchor.x - x(unit), y: param_4_translate_anchor.y - y(unit)}"
+        }
+      ]
+    },
+    {
+      "name": "param_4_zoom_anchor",
+      "on": [
+        {
+          "events": [{"source": "scope", "consume": true, "type": "wheel"}],
+          "update": "{x: invert(\"x\", x(unit)), y: invert(\"y\", y(unit))}"
+        }
+      ]
+    },
+    {
+      "name": "param_4_zoom_delta",
+      "on": [
+        {
+          "events": [{"source": "scope", "consume": true, "type": "wheel"}],
+          "update": "pow(1.001, event.deltaY * pow(16, event.deltaMode))",
+          "force": true
+        }
+      ]
+    },
+    {
+      "name": "param_4_modify",
+      "on": [
+        {
+          "events": {"signal": "param_4_tuple"},
+          "update": "modify(\"param_4_store\", param_4_tuple, true)"
+        }
+      ]
+    },
+    {
+      "name": "param_5_tuple",
+      "update": "param_5_provincia_legend !== null ? {fields: param_5_tuple_fields, values: [param_5_provincia_legend]} : null"
+    },
+    {
+      "name": "param_5_tuple_fields",
+      "value": [{"type": "E", "field": "provincia"}]
+    },
+    {
+      "name": "param_5_toggle",
+      "value": false,
+      "on": [
+        {
+          "events": {"merge": [{"source": "view", "type": "click"}]},
+          "update": "event.shiftKey"
+        }
+      ]
+    },
+    {
+      "name": "param_5_modify",
+      "on": [
+        {
+          "events": {"signal": "param_5_tuple"},
+          "update": "modify(\"param_5_store\", param_5_toggle ? null : param_5_tuple, param_5_toggle ? null : true, param_5_toggle ? param_5_tuple : null)"
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "type": "group",
+      "name": "view_1_pathgroup",
+      "from": {
+        "facet": {
+          "data": "source_0",
+          "name": "faceted_path_view_1_main",
+          "groupby": ["provincia"]
+        }
+      },
+      "encode": {
+        "update": {
+          "width": {
+            "field": {
+              "signal": null,
+              "datum": null,
+              "group": "width",
+              "parent": null
+            }
+          },
+          "height": {
+            "field": {
+              "signal": null,
+              "datum": null,
+              "group": "height",
+              "parent": null
+            }
+          }
+        }
+      },
+      "marks": [
+        {
+          "type": "line",
+          "name": "view_1_marks",
+          "from": {"data": "faceted_path_view_1_main"},
+          "sort": {"field": "x"},
+          "encode": {
+            "update": {
+              "y": {"field": "ranking", "scale": "y"},
+              "strokeWidth": {"value": 6},
+              "x": {"field": "año", "scale": "x"},
+              "opacity": [
+                {
+                  "value": 1,
+                  "test": "!length(data(\"param_5_store\")) || vlSelectionTest(\"param_5_store\", datum)"
+                },
+                {"value": 0.1}
+              ],
+              "stroke": {"field": "provincia", "scale": "color"},
+              "tooltip": {
+                "signal": "{\"Provincia\": isValid(datum[\"provincia\"]) ? datum[\"provincia\"] : \"\"+datum[\"provincia\"], \"Año\": isValid(datum[\"año\"]) ? datum[\"año\"] : \"\"+datum[\"año\"], \"Precio\": format(datum[\"precio\"], \"\"), \"Ranking\": format(datum[\"ranking\"], \"\")}"
+              },
+              "defined": {
+                "signal": "isValid(datum[\"ranking\"]) && isFinite(+datum[\"ranking\"])"
+              }
+            }
+          },
+          "style": ["line"],
+          "interactive": true,
+          "clip": true
+        }
+      ]
+    },
+    {
+      "type": "symbol",
+      "name": "layer_0_layer_1_marks",
+      "from": {"data": "data_0"},
+      "encode": {
+        "update": {
+          "size": {"value": 800},
+          "y": {"field": "ranking", "scale": "y"},
+          "opacity": [
+            {
+              "value": 1,
+              "test": "!length(data(\"param_5_store\")) || vlSelectionTest(\"param_5_store\", datum)"
+            },
+            {"value": 0.1}
+          ],
+          "x": {"field": "año", "scale": "x"},
+          "tooltip": {
+            "signal": "{\"Provincia\": isValid(datum[\"provincia\"]) ? datum[\"provincia\"] : \"\"+datum[\"provincia\"], \"Año\": isValid(datum[\"año\"]) ? datum[\"año\"] : \"\"+datum[\"año\"], \"Precio\": format(datum[\"precio\"], \"\"), \"Ranking\": format(datum[\"ranking\"], \"\")}"
+          },
+          "fill": {"field": "provincia", "scale": "color"}
+        }
+      },
+      "interactive": true,
+      "clip": true,
+      "style": ["point"]
+    },
+    {
+      "type": "text",
+      "name": "layer_1_marks",
+      "from": {"data": "data_1"},
+      "encode": {
+        "update": {
+          "opacity": [
+            {
+              "value": 1,
+              "test": "!length(data(\"param_5_store\")) || vlSelectionTest(\"param_5_store\", datum)"
+            },
+            {"value": 0.1}
+          ],
+          "align": {"value": "center"},
+          "y": {"field": "ranking", "scale": "y"},
+          "dy": {"value": 0},
+          "fontSize": {"value": 16},
+          "baseline": {"value": "middle"},
+          "fill": {"value": "white"},
+          "x": {"field": "año", "scale": "x"},
+          "text": {
+            "signal": "isValid(datum[\"iniciales\"]) ? datum[\"iniciales\"] : \"\"+datum[\"iniciales\"]"
+          }
+        }
+      },
+      "style": ["text"],
+      "clip": true,
+      "interactive": false
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "point",
+      "domain": {
+        "fields": [
+          {"data": "source_0_x_domain_año_0", "field": "año"},
+          {"data": "data_0_x_domain_año_1", "field": "año"},
+          {"data": "data_1_x_domain_año_2", "field": "año"}
+        ],
+        "sort": true
+      },
+      "range": [0, {"signal": "width"}],
+      "padding": 0.5
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": [0.9, 7.1],
+      "range": [{"signal": "height"}, 0],
+      "domainRaw": {"signal": "param_4[\"ranking\"]"},
+      "nice": true,
+      "reverse": true,
+      "zero": false
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": {
+        "fields": [
+          {"data": "source_0_color_domain_provincia_0", "field": "provincia"},
+          {"data": "data_0_color_domain_provincia_1", "field": "provincia"}
+        ],
+        "sort": true
+      },
+      "range": "category"
+    }
+  ],
+  "axes": [
+    {
+      "scale": "y",
+      "minExtent": 0,
+      "zindex": 0,
+      "domain": false,
+      "labels": false,
+      "gridScale": "x",
+      "tickCount": {"signal": "ceil(height/40)"},
+      "orient": "left",
+      "aria": false,
+      "grid": true,
+      "maxExtent": 0,
+      "ticks": false
+    },
+    {
+      "scale": "x",
+      "grid": false,
+      "title": "Año",
+      "labelBaseline": "middle",
+      "labelAngle": 270,
+      "zindex": 0,
+      "orient": "bottom",
+      "labelAlign": "right"
+    },
+    {
+      "scale": "y",
+      "title": "Ranking",
+      "grid": false,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "zindex": 0,
+      "labelOverlap": true,
+      "orient": "left"
+    }
+  ],
+  "title": {
+    "text": "Bump Chart de Ranking de Precios por Provincia",
+    "frame": "group"
+  },
+  "width": 800,
+  "height": 600,
+  "style": "cell",
+  "padding": 5,
+  "legends": [
+    {
+      "title": "Provincia",
+      "stroke": "color",
+      "symbolType": "circle",
+      "encode": {
+        "labels": {
+          "name": "provincia_legend_labels",
+          "interactive": true,
+          "update": {
+            "opacity": [
+              {
+                "test": "(!length(data(\"param_5_store\")) || (param_5[\"provincia\"] && indexof(param_5[\"provincia\"], datum.value) >= 0))",
+                "value": 1
+              },
+              {"value": 0.35}
+            ]
+          }
+        },
+        "symbols": {
+          "name": "provincia_legend_symbols",
+          "interactive": true,
+          "update": {
+            "opacity": [
+              {
+                "test": "(!length(data(\"param_5_store\")) || (param_5[\"provincia\"] && indexof(param_5[\"provincia\"], datum.value) >= 0))",
+                "value": 1
+              },
+              {"value": 0.35}
+            ]
+          }
+        },
+        "entries": {
+          "name": "provincia_legend_entries",
+          "interactive": true,
+          "update": {"fill": {"value": "transparent"}}
+        }
+      },
+      "fill": "color"
+    }
+  ],
+  "background": "white",
+  "config": {}
+};
+    vegaEmbed("#vis", spec, {mode: "vega"}).then(console.log).catch(console.warn);
+  </script>
+</body>
+</html>
