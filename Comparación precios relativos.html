@@ -1,0 +1,4106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+</head>
+<body>
+  <div id="vis"/>
+  <script>
+    const spec = {
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "data": [
+    {"name": "param_2_store"},
+    {
+      "name": "source_0",
+      "values": [
+        {
+          "año_mes": 1483239600000,
+          "producto": "GNC",
+          "sum": 22.53,
+          "proporcion": 7.238321660348261,
+          "proporcion_start": 92.76167833965172,
+          "proporcion_end": 99.99999999999999
+        },
+        {
+          "año_mes": 1485918000000,
+          "producto": "GNC",
+          "sum": 20.16,
+          "proporcion": 8.90931589181545,
+          "proporcion_start": 91.09068410818455,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1488337200000,
+          "producto": "GNC",
+          "sum": 20.34,
+          "proporcion": 5.966034083242895,
+          "proporcion_start": 94.03396591675711,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1491015600000,
+          "producto": "GNC",
+          "sum": 28.16,
+          "proporcion": 5.756807588519094,
+          "proporcion_start": 94.24319241148092,
+          "proporcion_end": 100.00000000000001
+        },
+        {
+          "año_mes": 1493607600000,
+          "producto": "GNC",
+          "sum": 31.92,
+          "proporcion": 16.421442535240253,
+          "proporcion_start": 83.57855746475974,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1496286000000,
+          "producto": "GNC",
+          "sum": 22.21,
+          "proporcion": 12.421005536603099,
+          "proporcion_start": 87.57899446339691,
+          "proporcion_end": 100.00000000000001
+        },
+        {
+          "año_mes": 1498878000000,
+          "producto": "GNC",
+          "sum": 26.06,
+          "proporcion": 5.380740006607201,
+          "proporcion_start": 94.6192599933928,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1501556400000,
+          "producto": "GNC",
+          "sum": 29.75,
+          "proporcion": 14.87723158473771,
+          "proporcion_start": 85.1227684152623,
+          "proporcion_end": 100.00000000000001
+        },
+        {
+          "año_mes": 1504234800000,
+          "producto": "GNC",
+          "sum": 24.71,
+          "proporcion": 12.102659548415536,
+          "proporcion_start": 87.89734045158447,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1506826800000,
+          "producto": "GNC",
+          "sum": 26.03,
+          "proporcion": 4.43637727102294,
+          "proporcion_start": 95.56362272897707,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1509505200000,
+          "producto": "GNC",
+          "sum": 32.12,
+          "proporcion": 6.675534125862499,
+          "proporcion_start": 93.3244658741375,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1512097200000,
+          "producto": "GNC",
+          "sum": 32.91,
+          "proporcion": 6.2290613820907375,
+          "proporcion_start": 93.77093861790927,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1514775600000,
+          "producto": "GNC",
+          "sum": 31.31,
+          "proporcion": 6.43841250257043,
+          "proporcion_start": 93.56158749742957,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1517454000000,
+          "producto": "GNC",
+          "sum": 29.56,
+          "proporcion": 5.257728291416171,
+          "proporcion_start": 94.74227170858381,
+          "proporcion_end": 99.99999999999999
+        },
+        {
+          "año_mes": 1519873200000,
+          "producto": "GNC",
+          "sum": 33.82,
+          "proporcion": 12.089797669264318,
+          "proporcion_start": 87.91020233073567,
+          "proporcion_end": 99.99999999999999
+        },
+        {
+          "año_mes": 1522551600000,
+          "producto": "GNC",
+          "sum": 39.94,
+          "proporcion": 7.299109998355231,
+          "proporcion_start": 92.70089000164475,
+          "proporcion_end": 99.99999999999999
+        },
+        {
+          "año_mes": 1525143600000,
+          "producto": "GNC",
+          "sum": 43.67,
+          "proporcion": 12.947315366598474,
+          "proporcion_start": 87.05268463340153,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1527822000000,
+          "producto": "GNC",
+          "sum": 38.42,
+          "proporcion": 6.109467926088477,
+          "proporcion_start": 93.89053207391152,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1530414000000,
+          "producto": "GNC",
+          "sum": 38.06,
+          "proporcion": 5.229530496434412,
+          "proporcion_start": 94.77046950356558,
+          "proporcion_end": 99.99999999999999
+        },
+        {
+          "año_mes": 1533092400000,
+          "producto": "GNC",
+          "sum": 38.98,
+          "proporcion": 4.9225251619584025,
+          "proporcion_start": 95.0774748380416,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1535770800000,
+          "producto": "GNC",
+          "sum": 40.93,
+          "proporcion": 3.8610293562749973,
+          "proporcion_start": 96.138970643725,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1538362800000,
+          "producto": "GNC",
+          "sum": 51.48,
+          "proporcion": 8.810994916733701,
+          "proporcion_start": 91.1890050832663,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1541041200000,
+          "producto": "GNC",
+          "sum": 45.34,
+          "proporcion": 5.8926737974864505,
+          "proporcion_start": 94.10732620251355,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1543633200000,
+          "producto": "GNC",
+          "sum": 49.4,
+          "proporcion": 5.374530816515258,
+          "proporcion_start": 94.62546918348474,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1546311600000,
+          "producto": "GNC",
+          "sum": 43.45,
+          "proporcion": 4.3038551448155635,
+          "proporcion_start": 95.69614485518446,
+          "proporcion_end": 100.00000000000001
+        },
+        {
+          "año_mes": 1548990000000,
+          "producto": "GNC",
+          "sum": 47.11,
+          "proporcion": 5.081984897518878,
+          "proporcion_start": 94.91801510248112,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1551409200000,
+          "producto": "GNC",
+          "sum": 51.07,
+          "proporcion": 4.196419033845801,
+          "proporcion_start": 95.80358096615421,
+          "proporcion_end": 100.00000000000001
+        },
+        {
+          "año_mes": 1554087600000,
+          "producto": "GNC",
+          "sum": 58.65,
+          "proporcion": 6.100668837180274,
+          "proporcion_start": 93.89933116281972,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1556679600000,
+          "producto": "GNC",
+          "sum": 54.66,
+          "proporcion": 8.747839446898405,
+          "proporcion_start": 91.25216055310159,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1559358000000,
+          "producto": "GNC",
+          "sum": 53.04,
+          "proporcion": 5.068565148836543,
+          "proporcion_start": 94.93143485116346,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1561950000000,
+          "producto": "GNC",
+          "sum": 53.43,
+          "proporcion": 4.631869132142207,
+          "proporcion_start": 95.36813086785779,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1564628400000,
+          "producto": "GNC",
+          "sum": 56.69,
+          "proporcion": 10.944438009189543,
+          "proporcion_start": 89.05556199081045,
+          "proporcion_end": 99.99999999999999
+        },
+        {
+          "año_mes": 1567306800000,
+          "producto": "GNC",
+          "sum": 59.39,
+          "proporcion": 4.332980702586363,
+          "proporcion_start": 95.66701929741362,
+          "proporcion_end": 99.99999999999999
+        },
+        {
+          "año_mes": 1569898800000,
+          "producto": "GNC",
+          "sum": 53.85,
+          "proporcion": 10.235696635620604,
+          "proporcion_start": 89.7643033643794,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1572577200000,
+          "producto": "GNC",
+          "sum": 67.7,
+          "proporcion": 4.735457877507625,
+          "proporcion_start": 95.26454212249239,
+          "proporcion_end": 100.00000000000001
+        },
+        {
+          "año_mes": 1575169200000,
+          "producto": "GNC",
+          "sum": 68.31,
+          "proporcion": 5.105075929690303,
+          "proporcion_start": 94.89492407030971,
+          "proporcion_end": 100.00000000000001
+        },
+        {
+          "año_mes": 1577847600000,
+          "producto": "GNC",
+          "sum": 59.67,
+          "proporcion": 8.916083916083917,
+          "proporcion_start": 91.08391608391608,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1580526000000,
+          "producto": "GNC",
+          "sum": 55.68,
+          "proporcion": 8.44775530639802,
+          "proporcion_start": 91.55224469360198,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1583031600000,
+          "producto": "GNC",
+          "sum": 60.65,
+          "proporcion": 5.392836818893158,
+          "proporcion_start": 94.60716318110687,
+          "proporcion_end": 100.00000000000003
+        },
+        {
+          "año_mes": 1585710000000,
+          "producto": "GNC",
+          "sum": 58.65,
+          "proporcion": 10.376857749469215,
+          "proporcion_start": 89.6231422505308,
+          "proporcion_end": 100.00000000000001
+        },
+        {
+          "año_mes": 1588302000000,
+          "producto": "GNC",
+          "sum": 49.69,
+          "proporcion": 7.834079586302578,
+          "proporcion_start": 92.1659204136974,
+          "proporcion_end": 99.99999999999999
+        },
+        {
+          "año_mes": 1590980400000,
+          "producto": "GNC",
+          "sum": 51.64,
+          "proporcion": 9.140308334955838,
+          "proporcion_start": 90.85969166504415,
+          "proporcion_end": 99.99999999999999
+        },
+        {
+          "año_mes": 1593572400000,
+          "producto": "GNC",
+          "sum": 55.07,
+          "proporcion": 8.894452071388192,
+          "proporcion_start": 91.1055479286118,
+          "proporcion_end": 99.99999999999999
+        },
+        {
+          "año_mes": 1596250800000,
+          "producto": "GNC",
+          "sum": 68.36,
+          "proporcion": 4.521881780176747,
+          "proporcion_start": 95.47811821982324,
+          "proporcion_end": 99.99999999999999
+        },
+        {
+          "año_mes": 1598929200000,
+          "producto": "GNC",
+          "sum": 70.51,
+          "proporcion": 4.596539720204957,
+          "proporcion_start": 95.40346027979504,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1601521200000,
+          "producto": "GNC",
+          "sum": 75.23,
+          "proporcion": 4.498003013416881,
+          "proporcion_start": 95.50199698658312,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1604199600000,
+          "producto": "GNC",
+          "sum": 94.3,
+          "proporcion": 5.335128682398602,
+          "proporcion_start": 94.6648713176014,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1606791600000,
+          "producto": "GNC",
+          "sum": 81.18,
+          "proporcion": 4.081468484004444,
+          "proporcion_start": 95.91853151599554,
+          "proporcion_end": 99.99999999999999
+        },
+        {
+          "año_mes": 1609470000000,
+          "producto": "GNC",
+          "sum": 86.72,
+          "proporcion": 3.6544150491778407,
+          "proporcion_start": 96.34558495082216,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1612148400000,
+          "producto": "GNC",
+          "sum": 89.99,
+          "proporcion": 4.4982854629250095,
+          "proporcion_start": 95.50171453707499,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1614567600000,
+          "producto": "GNC",
+          "sum": 102.67,
+          "proporcion": 4.841805431763413,
+          "proporcion_start": 95.1581945682366,
+          "proporcion_end": 100.00000000000001
+        },
+        {
+          "año_mes": 1617246000000,
+          "producto": "GNC",
+          "sum": 110.47,
+          "proporcion": 4.810363596777704,
+          "proporcion_start": 95.18963640322227,
+          "proporcion_end": 99.99999999999997
+        },
+        {
+          "año_mes": 1619838000000,
+          "producto": "GNC",
+          "sum": 129.38,
+          "proporcion": 5.522168917419289,
+          "proporcion_start": 94.47783108258072,
+          "proporcion_end": 100.00000000000001
+        },
+        {
+          "año_mes": 1622516400000,
+          "producto": "GNC",
+          "sum": 119.38,
+          "proporcion": 10.795511064087608,
+          "proporcion_start": 89.2044889359124,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1625108400000,
+          "producto": "GNC",
+          "sum": 134.11,
+          "proporcion": 10.802951458813295,
+          "proporcion_start": 89.19704854118669,
+          "proporcion_end": 99.99999999999999
+        },
+        {
+          "año_mes": 1627786800000,
+          "producto": "GNC",
+          "sum": 119.54,
+          "proporcion": 11.83822218701103,
+          "proporcion_start": 88.16177781298897,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1630465200000,
+          "producto": "GNC",
+          "sum": 105.05,
+          "proporcion": 9.242884166996612,
+          "proporcion_start": 90.75711583300338,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1633057200000,
+          "producto": "GNC",
+          "sum": 103.76,
+          "proporcion": 10.75645584317303,
+          "proporcion_start": 89.24354415682697,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1635735600000,
+          "producto": "GNC",
+          "sum": 133.62,
+          "proporcion": 12.758156454985537,
+          "proporcion_start": 87.24184354501448,
+          "proporcion_end": 100.00000000000001
+        },
+        {
+          "año_mes": 1638327600000,
+          "producto": "GNC",
+          "sum": 107.06,
+          "proporcion": 10.629151236559673,
+          "proporcion_start": 89.37084876344032,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1641006000000,
+          "producto": "GNC",
+          "sum": 145.71,
+          "proporcion": 11.7862602829479,
+          "proporcion_start": 88.2137397170521,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1643684400000,
+          "producto": "GNC",
+          "sum": 147.14,
+          "proporcion": 4.197296318166129,
+          "proporcion_start": 95.80270368183388,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1646103600000,
+          "producto": "GNC",
+          "sum": 162.55,
+          "proporcion": 5.342206885218963,
+          "proporcion_start": 94.65779311478104,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1648782000000,
+          "producto": "GNC",
+          "sum": 143.44,
+          "proporcion": 10.321577883155477,
+          "proporcion_start": 89.67842211684453,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1651374000000,
+          "producto": "GNC",
+          "sum": 197.89,
+          "proporcion": 6.690671805795044,
+          "proporcion_start": 93.30932819420497,
+          "proporcion_end": 100.00000000000001
+        },
+        {
+          "año_mes": 1654052400000,
+          "producto": "GNC",
+          "sum": 193.28,
+          "proporcion": 7.420603231156707,
+          "proporcion_start": 92.57939676884332,
+          "proporcion_end": 100.00000000000003
+        },
+        {
+          "año_mes": 1656644400000,
+          "producto": "GNC",
+          "sum": 168.3,
+          "proporcion": 8.090412644694842,
+          "proporcion_start": 91.90958735530515,
+          "proporcion_end": 99.99999999999999
+        },
+        {
+          "año_mes": 1659322800000,
+          "producto": "GNC",
+          "sum": 195.38,
+          "proporcion": 5.31748990961519,
+          "proporcion_start": 94.6825100903848,
+          "proporcion_end": 99.99999999999999
+        },
+        {
+          "año_mes": 1662001200000,
+          "producto": "GNC",
+          "sum": 212.82,
+          "proporcion": 10.978874874255204,
+          "proporcion_start": 89.02112512574479,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1664593200000,
+          "producto": "GNC",
+          "sum": 315.91,
+          "proporcion": 7.1361288121963184,
+          "proporcion_start": 92.86387118780368,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1667271600000,
+          "producto": "GNC",
+          "sum": 236.8,
+          "proporcion": 5.067831468922081,
+          "proporcion_start": 94.93216853107792,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1669863600000,
+          "producto": "GNC",
+          "sum": 228.71,
+          "proporcion": 5.384059455120283,
+          "proporcion_start": 94.61594054487972,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1672542000000,
+          "producto": "GNC",
+          "sum": 240.15,
+          "proporcion": 5.201440765520394,
+          "proporcion_start": 94.79855923447961,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1675220400000,
+          "producto": "GNC",
+          "sum": 259.03,
+          "proporcion": 5.199860282486328,
+          "proporcion_start": 94.80013971751366,
+          "proporcion_end": 99.99999999999999
+        },
+        {
+          "año_mes": 1677639600000,
+          "producto": "GNC",
+          "sum": 244.56,
+          "proporcion": 2.3770922027176766,
+          "proporcion_start": 97.62290779728231,
+          "proporcion_end": 99.99999999999999
+        },
+        {
+          "año_mes": 1680318000000,
+          "producto": "GNC",
+          "sum": 394.69,
+          "proporcion": 7.0934081931209985,
+          "proporcion_start": 92.90659180687899,
+          "proporcion_end": 99.99999999999999
+        },
+        {
+          "año_mes": 1682910000000,
+          "producto": "GNC",
+          "sum": 292.53,
+          "proporcion": 4.716468541559515,
+          "proporcion_start": 95.2835314584405,
+          "proporcion_end": 100.00000000000003
+        },
+        {
+          "año_mes": 1685588400000,
+          "producto": "GNC",
+          "sum": 328.62,
+          "proporcion": 5.289206715563903,
+          "proporcion_start": 94.71079328443611,
+          "proporcion_end": 100.00000000000001
+        },
+        {
+          "año_mes": 1688180400000,
+          "producto": "GNC",
+          "sum": 318.78,
+          "proporcion": 4.499123547360904,
+          "proporcion_start": 95.5008764526391,
+          "proporcion_end": 100.00000000000001
+        },
+        {
+          "año_mes": 1690858800000,
+          "producto": "GNC",
+          "sum": 411.97,
+          "proporcion": 5.593489355982279,
+          "proporcion_start": 94.40651064401771,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1693537200000,
+          "producto": "GNC",
+          "sum": 369.73,
+          "proporcion": 8.586470845061264,
+          "proporcion_start": 91.41352915493874,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1696129200000,
+          "producto": "GNC",
+          "sum": 461.17,
+          "proporcion": 7.1040381042753316,
+          "proporcion_start": 92.89596189572467,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1698807600000,
+          "producto": "GNC",
+          "sum": 517.69,
+          "proporcion": 4.807429790853728,
+          "proporcion_start": 95.19257020914628,
+          "proporcion_end": 100.00000000000001
+        },
+        {
+          "año_mes": 1701399600000,
+          "producto": "GNC",
+          "sum": 743.84,
+          "proporcion": 5.399774525439933,
+          "proporcion_start": 94.60022547456005,
+          "proporcion_end": 99.99999999999999
+        },
+        {
+          "año_mes": 1704078000000,
+          "producto": "GNC",
+          "sum": 1001.68,
+          "proporcion": 5.330157630440346,
+          "proporcion_start": 94.66984236955965,
+          "proporcion_end": 99.99999999999999
+        },
+        {
+          "año_mes": 1706756400000,
+          "producto": "GNC",
+          "sum": 1163.23,
+          "proporcion": 5.68281135575426,
+          "proporcion_start": 94.31718864424573,
+          "proporcion_end": 99.99999999999999
+        },
+        {
+          "año_mes": 1709262000000,
+          "producto": "GNC",
+          "sum": 1182.32,
+          "proporcion": 4.874802607437215,
+          "proporcion_start": 95.12519739256278,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1711940400000,
+          "producto": "GNC",
+          "sum": 1391.91,
+          "proporcion": 5.635183307119131,
+          "proporcion_start": 94.36481669288088,
+          "proporcion_end": 100.00000000000001
+        },
+        {
+          "año_mes": 1714532400000,
+          "producto": "GNC",
+          "sum": 1369,
+          "proporcion": 5.184671248668801,
+          "proporcion_start": 94.81532875133118,
+          "proporcion_end": 99.99999999999999
+        },
+        {
+          "año_mes": 1717210800000,
+          "producto": "GNC",
+          "sum": 1385.51,
+          "proporcion": 4.889276593432148,
+          "proporcion_start": 95.11072340656783,
+          "proporcion_end": 99.99999999999997
+        },
+        {
+          "año_mes": 1719802800000,
+          "producto": "GNC",
+          "sum": 1465.38,
+          "proporcion": 4.480930862335633,
+          "proporcion_start": 95.51906913766439,
+          "proporcion_end": 100.00000000000003
+        },
+        {
+          "año_mes": 1722481200000,
+          "producto": "GNC",
+          "sum": 1516.45,
+          "proporcion": 4.7714325089846845,
+          "proporcion_start": 95.22856749101531,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1725159600000,
+          "producto": "GNC",
+          "sum": 1575.6,
+          "proporcion": 5.252569028311401,
+          "proporcion_start": 94.7474309716886,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1727751600000,
+          "producto": "GNC",
+          "sum": 1204.31,
+          "proporcion": 3.6451704389816606,
+          "proporcion_start": 96.35482956101833,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1483239600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 63.42,
+          "proporcion": 20.375248987984317,
+          "proporcion_start": 72.3864293516674,
+          "proporcion_end": 92.76167833965172
+        },
+        {
+          "año_mes": 1485918000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 45.84,
+          "proporcion": 20.25808732543751,
+          "proporcion_start": 70.83259678274703,
+          "proporcion_end": 91.09068410818455
+        },
+        {
+          "año_mes": 1488337200000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 68.54,
+          "proporcion": 20.103833631537267,
+          "proporcion_start": 73.93013228521984,
+          "proporcion_end": 94.03396591675711
+        },
+        {
+          "año_mes": 1491015600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 95.08,
+          "proporcion": 19.437402894758364,
+          "proporcion_start": 74.80578951672256,
+          "proporcion_end": 94.24319241148092
+        },
+        {
+          "año_mes": 1493607600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 35.41,
+          "proporcion": 18.216894742257434,
+          "proporcion_start": 65.3616627225023,
+          "proporcion_end": 83.57855746475974
+        },
+        {
+          "año_mes": 1496286000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 34.6,
+          "proporcion": 19.350148202002128,
+          "proporcion_start": 68.22884626139478,
+          "proporcion_end": 87.57899446339691
+        },
+        {
+          "año_mes": 1498878000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 99.15,
+          "proporcion": 20.472001982160556,
+          "proporcion_start": 74.14725801123225,
+          "proporcion_end": 94.6192599933928
+        },
+        {
+          "año_mes": 1501556400000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 36.46,
+          "proporcion": 18.232734910236537,
+          "proporcion_start": 66.89003350502577,
+          "proporcion_end": 85.1227684152623
+        },
+        {
+          "año_mes": 1504234800000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 37.37,
+          "proporcion": 18.30337463878141,
+          "proporcion_start": 69.59396581280306,
+          "proporcion_end": 87.89734045158447
+        },
+        {
+          "año_mes": 1506826800000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 116.59,
+          "proporcion": 19.870811603095067,
+          "proporcion_start": 75.692811125882,
+          "proporcion_end": 95.56362272897707
+        },
+        {
+          "año_mes": 1509505200000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 45.79,
+          "proporcion": 9.516584919777205,
+          "proporcion_start": 83.8078809543603,
+          "proporcion_end": 93.3244658741375
+        },
+        {
+          "año_mes": 1512097200000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 105.56,
+          "proporcion": 19.979936781935532,
+          "proporcion_start": 73.79100183597373,
+          "proporcion_end": 93.77093861790927
+        },
+        {
+          "año_mes": 1514775600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 97.67,
+          "proporcion": 20.08431009664816,
+          "proporcion_start": 73.47727740078142,
+          "proporcion_end": 93.56158749742957
+        },
+        {
+          "año_mes": 1517454000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 113.11,
+          "proporcion": 20.118458966240972,
+          "proporcion_start": 74.62381274234284,
+          "proporcion_end": 94.74227170858381
+        },
+        {
+          "año_mes": 1519873200000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 52.58,
+          "proporcion": 18.79602488024594,
+          "proporcion_start": 69.11417745048973,
+          "proporcion_end": 87.91020233073567
+        },
+        {
+          "año_mes": 1522551600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 107.68,
+          "proporcion": 19.678722198870595,
+          "proporcion_start": 73.02216780277416,
+          "proporcion_end": 92.70089000164475
+        },
+        {
+          "año_mes": 1525143600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 62.71,
+          "proporcion": 18.592309288742623,
+          "proporcion_start": 68.4603753446589,
+          "proporcion_end": 87.05268463340153
+        },
+        {
+          "año_mes": 1527822000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 123.82,
+          "proporcion": 19.689597048627675,
+          "proporcion_start": 74.20093502528384,
+          "proporcion_end": 93.89053207391152
+        },
+        {
+          "año_mes": 1530414000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 142.57,
+          "proporcion": 19.589442009370835,
+          "proporcion_start": 75.18102749419475,
+          "proporcion_end": 94.77046950356558
+        },
+        {
+          "año_mes": 1533092400000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 160.53,
+          "proporcion": 20.272266912498264,
+          "proporcion_start": 74.80520792554333,
+          "proporcion_end": 95.0774748380416
+        },
+        {
+          "año_mes": 1535770800000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 222.27,
+          "proporcion": 20.967285487887704,
+          "proporcion_start": 75.1716851558373,
+          "proporcion_end": 96.138970643725
+        },
+        {
+          "año_mes": 1538362800000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 114.29,
+          "proporcion": 19.56116179163743,
+          "proporcion_start": 71.62784329162886,
+          "proporcion_end": 91.1890050832663
+        },
+        {
+          "año_mes": 1541041200000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 156.36,
+          "proporcion": 20.321536721989006,
+          "proporcion_start": 73.78578948052454,
+          "proporcion_end": 94.10732620251355
+        },
+        {
+          "año_mes": 1543633200000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 190.69,
+          "proporcion": 20.74634172877115,
+          "proporcion_start": 73.8791274547136,
+          "proporcion_end": 94.62546918348474
+        },
+        {
+          "año_mes": 1546311600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 205.28,
+          "proporcion": 20.33361068188122,
+          "proporcion_start": 75.36253417330323,
+          "proporcion_end": 95.69614485518446
+        },
+        {
+          "año_mes": 1548990000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 195.98,
+          "proporcion": 21.141316073354908,
+          "proporcion_start": 73.7766990291262,
+          "proporcion_end": 94.91801510248112
+        },
+        {
+          "año_mes": 1551409200000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 255.99,
+          "proporcion": 21.034683933310877,
+          "proporcion_start": 74.76889703284334,
+          "proporcion_end": 95.80358096615421
+        },
+        {
+          "año_mes": 1554087600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 202.28,
+          "proporcion": 21.040806349272394,
+          "proporcion_start": 72.85852481354732,
+          "proporcion_end": 93.89933116281972
+        },
+        {
+          "año_mes": 1556679600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 129.67,
+          "proporcion": 20.752512643236663,
+          "proporcion_start": 70.49964790986493,
+          "proporcion_end": 91.25216055310159
+        },
+        {
+          "año_mes": 1559358000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 230.06,
+          "proporcion": 21.984805771895456,
+          "proporcion_start": 72.946629079268,
+          "proporcion_end": 94.93143485116346
+        },
+        {
+          "año_mes": 1561950000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 251.04,
+          "proporcion": 21.762762997061195,
+          "proporcion_start": 73.60536787079658,
+          "proporcion_end": 95.36813086785779
+        },
+        {
+          "año_mes": 1564628400000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 104.73,
+          "proporcion": 20.218927371713193,
+          "proporcion_start": 68.83663461909725,
+          "proporcion_end": 89.05556199081045
+        },
+        {
+          "año_mes": 1567306800000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 286.14,
+          "proporcion": 20.87622660781381,
+          "proporcion_start": 74.79079268959981,
+          "proporcion_end": 95.66701929741362
+        },
+        {
+          "año_mes": 1569898800000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 107.73,
+          "proporcion": 20.477095609199772,
+          "proporcion_start": 69.28720775517962,
+          "proporcion_end": 89.7643033643794
+        },
+        {
+          "año_mes": 1572577200000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 306.25,
+          "proporcion": 21.42147673540192,
+          "proporcion_start": 73.84306538709046,
+          "proporcion_end": 95.26454212249239
+        },
+        {
+          "año_mes": 1575169200000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 287.67,
+          "proporcion": 21.498714576109055,
+          "proporcion_start": 73.39620949420066,
+          "proporcion_end": 94.89492407030971
+        },
+        {
+          "año_mes": 1577847600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 134.86,
+          "proporcion": 20.151216305062462,
+          "proporcion_start": 70.93269977885362,
+          "proporcion_end": 91.08391608391608
+        },
+        {
+          "año_mes": 1580526000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 124.14,
+          "proporcion": 18.834488932044728,
+          "proporcion_start": 72.71775576155724,
+          "proporcion_end": 91.55224469360198
+        },
+        {
+          "año_mes": 1583031600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 118.28,
+          "proporcion": 10.517143263622138,
+          "proporcion_start": 84.09001991748474,
+          "proporcion_end": 94.60716318110687
+        },
+        {
+          "año_mes": 1585710000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 117.33,
+          "proporcion": 20.759023354564757,
+          "proporcion_start": 68.86411889596604,
+          "proporcion_end": 89.6231422505308
+        },
+        {
+          "año_mes": 1588302000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 121.23,
+          "proporcion": 19.113010027117358,
+          "proporcion_start": 73.05291038658005,
+          "proporcion_end": 92.1659204136974
+        },
+        {
+          "año_mes": 1590980400000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 111.95,
+          "proporcion": 19.815211427155425,
+          "proporcion_start": 71.04448023788873,
+          "proporcion_end": 90.85969166504415
+        },
+        {
+          "año_mes": 1593572400000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 121.93,
+          "proporcion": 19.693127675038358,
+          "proporcion_start": 71.41242025357344,
+          "proporcion_end": 91.1055479286118
+        },
+        {
+          "año_mes": 1596250800000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 327.33,
+          "proporcion": 21.652246388315604,
+          "proporcion_start": 73.82587183150764,
+          "proporcion_end": 95.47811821982324
+        },
+        {
+          "año_mes": 1598929200000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 327.63,
+          "proporcion": 21.358166338544176,
+          "proporcion_start": 74.04529394125086,
+          "proporcion_end": 95.40346027979504
+        },
+        {
+          "año_mes": 1601521200000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 359.05,
+          "proporcion": 21.467605768540885,
+          "proporcion_start": 74.03439121804223,
+          "proporcion_end": 95.50199698658312
+        },
+        {
+          "año_mes": 1604199600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 370.38,
+          "proporcion": 20.954665550231113,
+          "proporcion_start": 73.71020576737028,
+          "proporcion_end": 94.6648713176014
+        },
+        {
+          "año_mes": 1606791600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 462.05,
+          "proporcion": 23.230383259845446,
+          "proporcion_start": 72.6881482561501,
+          "proporcion_end": 95.91853151599554
+        },
+        {
+          "año_mes": 1609470000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 511.96,
+          "proporcion": 21.574196593370473,
+          "proporcion_start": 74.77138835745168,
+          "proporcion_end": 96.34558495082216
+        },
+        {
+          "año_mes": 1612148400000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 426.4,
+          "proporcion": 21.31424515380847,
+          "proporcion_start": 74.18746938326652,
+          "proporcion_end": 95.50171453707499
+        },
+        {
+          "año_mes": 1614567600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 462.56,
+          "proporcion": 21.813826049639474,
+          "proporcion_start": 73.34436851859712,
+          "proporcion_end": 95.1581945682366
+        },
+        {
+          "año_mes": 1617246000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 488.72,
+          "proporcion": 21.281079904202045,
+          "proporcion_start": 73.90855649902022,
+          "proporcion_end": 95.18963640322227
+        },
+        {
+          "año_mes": 1619838000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 514.25,
+          "proporcion": 21.94910624349103,
+          "proporcion_start": 72.52872483908969,
+          "proporcion_end": 94.47783108258072
+        },
+        {
+          "año_mes": 1622516400000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 288.88,
+          "proporcion": 26.12336435075916,
+          "proporcion_start": 63.08112458515323,
+          "proporcion_end": 89.2044889359124
+        },
+        {
+          "año_mes": 1625108400000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 224.82,
+          "proporcion": 18.109906397512525,
+          "proporcion_start": 71.08714214367416,
+          "proporcion_end": 89.19704854118669
+        },
+        {
+          "año_mes": 1627786800000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 190.01,
+          "proporcion": 18.81697003307651,
+          "proporcion_start": 69.34480777991246,
+          "proporcion_end": 88.16177781298897
+        },
+        {
+          "año_mes": 1630465200000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 212.2,
+          "proporcion": 18.67053803176279,
+          "proporcion_start": 72.0865778012406,
+          "proporcion_end": 90.75711583300338
+        },
+        {
+          "año_mes": 1633057200000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 197.12,
+          "proporcion": 20.434778101448224,
+          "proporcion_start": 68.80876605537875,
+          "proporcion_end": 89.24354415682697
+        },
+        {
+          "año_mes": 1635735600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 211.81,
+          "proporcion": 20.223807204987924,
+          "proporcion_start": 67.01803634002655,
+          "proporcion_end": 87.24184354501448
+        },
+        {
+          "año_mes": 1638327600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 237.36,
+          "proporcion": 23.565620563327148,
+          "proporcion_start": 65.80522820011318,
+          "proporcion_end": 89.37084876344032
+        },
+        {
+          "año_mes": 1641006000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 317.06,
+          "proporcion": 25.64650116883852,
+          "proporcion_start": 62.56723854821359,
+          "proporcion_end": 88.2137397170521
+        },
+        {
+          "año_mes": 1643684400000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 909.3,
+          "proporcion": 25.938572394375836,
+          "proporcion_start": 69.86413128745804,
+          "proporcion_end": 95.80270368183388
+        },
+        {
+          "año_mes": 1646103600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 592.72,
+          "proporcion": 19.479746939446223,
+          "proporcion_start": 75.17804617533483,
+          "proporcion_end": 94.65779311478104
+        },
+        {
+          "año_mes": 1648782000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 304.51,
+          "proporcion": 21.911765764080275,
+          "proporcion_start": 67.76665635276424,
+          "proporcion_end": 89.67842211684452
+        },
+        {
+          "año_mes": 1651374000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 611.4,
+          "proporcion": 20.671467694492343,
+          "proporcion_start": 72.63786049971262,
+          "proporcion_end": 93.30932819420497
+        },
+        {
+          "año_mes": 1654052400000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 740.29,
+          "proporcion": 28.421970022728676,
+          "proporcion_start": 64.15742674611465,
+          "proporcion_end": 92.57939676884332
+        },
+        {
+          "año_mes": 1656644400000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 405.04,
+          "proporcion": 19.47083028881283,
+          "proporcion_start": 72.43875706649231,
+          "proporcion_end": 91.90958735530515
+        },
+        {
+          "año_mes": 1659322800000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 790.57,
+          "proporcion": 21.51626572752831,
+          "proporcion_start": 73.16624436285649,
+          "proporcion_end": 94.6825100903848
+        },
+        {
+          "año_mes": 1662001200000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 440.52,
+          "proporcion": 22.72537336531765,
+          "proporcion_start": 66.29575176042715,
+          "proporcion_end": 89.0211251257448
+        },
+        {
+          "año_mes": 1664593200000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 963.77,
+          "proporcion": 21.77071591697143,
+          "proporcion_start": 71.09315527083226,
+          "proporcion_end": 92.86387118780368
+        },
+        {
+          "año_mes": 1667271600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 1019.04,
+          "proporcion": 21.808796368624815,
+          "proporcion_start": 73.12337216245311,
+          "proporcion_end": 94.93216853107792
+        },
+        {
+          "año_mes": 1669863600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 959.27,
+          "proporcion": 22.582163934734965,
+          "proporcion_start": 72.03377661014476,
+          "proporcion_end": 94.61594054487972
+        },
+        {
+          "año_mes": 1672542000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 1018.63,
+          "proporcion": 22.062642544168387,
+          "proporcion_start": 72.73591669031123,
+          "proporcion_end": 94.79855923447961
+        },
+        {
+          "año_mes": 1675220400000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 1084.22,
+          "proporcion": 21.76501762528405,
+          "proporcion_start": 73.03512209222961,
+          "proporcion_end": 94.80013971751366
+        },
+        {
+          "año_mes": 1677639600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 6158.36,
+          "proporcion": 59.85847864543845,
+          "proporcion_start": 37.764429151843856,
+          "proporcion_end": 97.62290779728231
+        },
+        {
+          "año_mes": 1680318000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 1188.06,
+          "proporcion": 21.351933258809023,
+          "proporcion_start": 71.55465854806997,
+          "proporcion_end": 92.90659180687899
+        },
+        {
+          "año_mes": 1682910000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 1353.78,
+          "proporcion": 21.82702896179004,
+          "proporcion_start": 73.45650249665047,
+          "proporcion_end": 95.2835314584405
+        },
+        {
+          "año_mes": 1685588400000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 1362.21,
+          "proporcion": 21.925051062042193,
+          "proporcion_start": 72.7857422223939,
+          "proporcion_end": 94.71079328443611
+        },
+        {
+          "año_mes": 1688180400000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 1565.85,
+          "proporcion": 22.0997321244591,
+          "proporcion_start": 73.40114432818001,
+          "proporcion_end": 95.5008764526391
+        },
+        {
+          "año_mes": 1690858800000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 1611.22,
+          "proporcion": 21.876209238890617,
+          "proporcion_start": 72.53030140512709,
+          "proporcion_end": 94.40651064401771
+        },
+        {
+          "año_mes": 1693537200000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 928.45,
+          "proporcion": 21.56197456548598,
+          "proporcion_start": 69.85155458945276,
+          "proporcion_end": 91.41352915493874
+        },
+        {
+          "año_mes": 1696129200000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 1401.19,
+          "proporcion": 21.584463758114257,
+          "proporcion_start": 71.31149813761041,
+          "proporcion_end": 92.89596189572467
+        },
+        {
+          "año_mes": 1698807600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 2381.09,
+          "proporcion": 22.11153972590528,
+          "proporcion_start": 73.081030483241,
+          "proporcion_end": 95.19257020914628
+        },
+        {
+          "año_mes": 1701399600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 3068.42,
+          "proporcion": 22.274650663248007,
+          "proporcion_start": 72.32557481131204,
+          "proporcion_end": 94.60022547456005
+        },
+        {
+          "año_mes": 1704078000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 4175.72,
+          "proporcion": 22.219916361095724,
+          "proporcion_start": 72.44992600846392,
+          "proporcion_end": 94.66984236955965
+        },
+        {
+          "año_mes": 1706756400000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 4551.54,
+          "proporcion": 22.235966402319182,
+          "proporcion_start": 72.08122224192655,
+          "proporcion_end": 94.31718864424573
+        },
+        {
+          "año_mes": 1709262000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 5358.56,
+          "proporcion": 22.093783628889614,
+          "proporcion_start": 73.03141376367317,
+          "proporcion_end": 95.12519739256278
+        },
+        {
+          "año_mes": 1711940400000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 5458.41,
+          "proporcion": 22.09851277411049,
+          "proporcion_start": 72.26630391877039,
+          "proporcion_end": 94.36481669288088
+        },
+        {
+          "año_mes": 1714532400000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 5813.19,
+          "proporcion": 22.015689595360833,
+          "proporcion_start": 72.79963915597034,
+          "proporcion_end": 94.81532875133118
+        },
+        {
+          "año_mes": 1717210800000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 6304.47,
+          "proporcion": 22.247618281351397,
+          "proporcion_start": 72.86310512521644,
+          "proporcion_end": 95.11072340656783
+        },
+        {
+          "año_mes": 1719802800000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 7579.58,
+          "proporcion": 23.177315061992054,
+          "proporcion_start": 72.34175407567233,
+          "proporcion_end": 95.51906913766439
+        },
+        {
+          "año_mes": 1722481200000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 7114.66,
+          "proporcion": 22.38591448077614,
+          "proporcion_start": 72.84265301023918,
+          "proporcion_end": 95.22856749101531
+        },
+        {
+          "año_mes": 1725159600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 6449.3,
+          "proporcion": 21.499995832881897,
+          "proporcion_start": 73.24743513880671,
+          "proporcion_end": 94.7474309716886
+        },
+        {
+          "año_mes": 1727751600000,
+          "producto": "Gas Oil Grado 2",
+          "sum": 7468.56,
+          "proporcion": 22.605619926564486,
+          "proporcion_start": 73.74920963445385,
+          "proporcion_end": 96.35482956101833
+        },
+        {
+          "año_mes": 1483239600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 75.15,
+          "proporcion": 24.143802608751525,
+          "proporcion_start": 48.242626742915874,
+          "proporcion_end": 72.3864293516674
+        },
+        {
+          "año_mes": 1485918000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 51.84,
+          "proporcion": 22.90966943609687,
+          "proporcion_start": 47.92292734665016,
+          "proporcion_end": 70.83259678274703
+        },
+        {
+          "año_mes": 1488337200000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 84.89,
+          "proporcion": 24.89953949491098,
+          "proporcion_start": 49.03059279030886,
+          "proporcion_end": 73.93013228521984
+        },
+        {
+          "año_mes": 1491015600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 113.11,
+          "proporcion": 23.123313435276803,
+          "proporcion_start": 51.682476081445756,
+          "proporcion_end": 74.80578951672256
+        },
+        {
+          "año_mes": 1493607600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 40.94,
+          "proporcion": 21.061837637617035,
+          "proporcion_start": 44.29982508488527,
+          "proporcion_end": 65.3616627225023
+        },
+        {
+          "año_mes": 1496286000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 39.85,
+          "proporcion": 22.286225602594932,
+          "proporcion_start": 45.94262065879985,
+          "proporcion_end": 68.22884626139478
+        },
+        {
+          "año_mes": 1498878000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 116.28,
+          "proporcion": 24.008919722497524,
+          "proporcion_start": 50.138338288734715,
+          "proporcion_end": 74.14725801123224
+        },
+        {
+          "año_mes": 1501556400000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 43.07,
+          "proporcion": 21.53823073461019,
+          "proporcion_start": 45.35180277041556,
+          "proporcion_end": 66.89003350502576
+        },
+        {
+          "año_mes": 1504234800000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 44.33,
+          "proporcion": 21.71229857471715,
+          "proporcion_start": 47.88166723808591,
+          "proporcion_end": 69.59396581280306
+        },
+        {
+          "año_mes": 1506826800000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 143.11,
+          "proporcion": 24.39070116235471,
+          "proporcion_start": 51.30210996352729,
+          "proporcion_end": 75.692811125882
+        },
+        {
+          "año_mes": 1509505200000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 53.43,
+          "proporcion": 11.104414332030926,
+          "proporcion_start": 72.70346662232937,
+          "proporcion_end": 83.8078809543603
+        },
+        {
+          "año_mes": 1512097200000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 126,
+          "proporcion": 23.848730906819597,
+          "proporcion_start": 49.942270929154134,
+          "proporcion_end": 73.79100183597373
+        },
+        {
+          "año_mes": 1514775600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 115.77,
+          "proporcion": 23.806292412091302,
+          "proporcion_start": 49.670984988690115,
+          "proporcion_end": 73.47727740078142
+        },
+        {
+          "año_mes": 1517454000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 137.66,
+          "proporcion": 24.485077016114687,
+          "proporcion_start": 50.13873572622816,
+          "proporcion_end": 74.62381274234285
+        },
+        {
+          "año_mes": 1519873200000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 61.54,
+          "proporcion": 21.998999070565525,
+          "proporcion_start": 47.11517837992421,
+          "proporcion_end": 69.11417745048973
+        },
+        {
+          "año_mes": 1522551600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 129.12,
+          "proporcion": 23.59692245837826,
+          "proporcion_start": 49.425245344395904,
+          "proporcion_end": 73.02216780277416
+        },
+        {
+          "año_mes": 1525143600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 74.95,
+          "proporcion": 22.221233952978146,
+          "proporcion_start": 46.239141391680754,
+          "proporcion_end": 68.4603753446589
+        },
+        {
+          "año_mes": 1527822000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 150.57,
+          "proporcion": 23.943326018509683,
+          "proporcion_start": 50.25760900677416,
+          "proporcion_end": 74.20093502528384
+        },
+        {
+          "año_mes": 1530414000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 178.73,
+          "proporcion": 24.557908187801424,
+          "proporcion_start": 50.62311930639333,
+          "proporcion_end": 75.18102749419475
+        },
+        {
+          "año_mes": 1533092400000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 197.82,
+          "proporcion": 24.98137320519782,
+          "proporcion_start": 49.82383472034551,
+          "proporcion_end": 74.80520792554333
+        },
+        {
+          "año_mes": 1535770800000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 271.74,
+          "proporcion": 25.63391442155309,
+          "proporcion_start": 49.53777073428421,
+          "proporcion_end": 75.1716851558373
+        },
+        {
+          "año_mes": 1538362800000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 139.35,
+          "proporcion": 23.850274701764597,
+          "proporcion_start": 47.777568589864266,
+          "proporcion_end": 71.62784329162886
+        },
+        {
+          "año_mes": 1541041200000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 185.38,
+          "proporcion": 24.093159871593254,
+          "proporcion_start": 49.692629608931284,
+          "proporcion_end": 73.78578948052454
+        },
+        {
+          "año_mes": 1543633200000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 235.46,
+          "proporcion": 25.61714627645107,
+          "proporcion_start": 48.26198117826253,
+          "proporcion_end": 73.8791274547136
+        },
+        {
+          "año_mes": 1546311600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 279.62,
+          "proporcion": 27.697214628154843,
+          "proporcion_start": 47.66531954514839,
+          "proporcion_end": 75.36253417330323
+        },
+        {
+          "año_mes": 1548990000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 235.78,
+          "proporcion": 25.43473570658037,
+          "proporcion_start": 48.34196332254585,
+          "proporcion_end": 73.77669902912622
+        },
+        {
+          "año_mes": 1551409200000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 311.02,
+          "proporcion": 25.556495944913273,
+          "proporcion_start": 49.21240108793007,
+          "proporcion_end": 74.76889703284334
+        },
+        {
+          "año_mes": 1554087600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 243.37,
+          "proporcion": 25.314915173138335,
+          "proporcion_start": 47.543609640409,
+          "proporcion_end": 72.85852481354733
+        },
+        {
+          "año_mes": 1556679600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 151.36,
+          "proporcion": 24.223801293131043,
+          "proporcion_start": 46.27584661673389,
+          "proporcion_end": 70.49964790986493
+        },
+        {
+          "año_mes": 1559358000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 269.38,
+          "proporcion": 25.742271489321034,
+          "proporcion_start": 47.20435758994697,
+          "proporcion_end": 72.946629079268
+        },
+        {
+          "año_mes": 1561950000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 292.63,
+          "proporcion": 25.368217558277635,
+          "proporcion_start": 48.23715031251896,
+          "proporcion_end": 73.6053678707966
+        },
+        {
+          "año_mes": 1564628400000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 121.7,
+          "proporcion": 23.49511564153056,
+          "proporcion_start": 45.34151897756669,
+          "proporcion_end": 68.83663461909725
+        },
+        {
+          "año_mes": 1567306800000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 352.24,
+          "proporcion": 25.698756064640865,
+          "proporcion_start": 49.09203662495895,
+          "proporcion_end": 74.79079268959981
+        },
+        {
+          "año_mes": 1569898800000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 123.05,
+          "proporcion": 23.38908952670595,
+          "proporcion_start": 45.89811822847368,
+          "proporcion_end": 69.28720775517962
+        },
+        {
+          "año_mes": 1572577200000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 361.12,
+          "proporcion": 25.259505889594585,
+          "proporcion_start": 48.58355949749588,
+          "proporcion_end": 73.84306538709046
+        },
+        {
+          "año_mes": 1575169200000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 335.74,
+          "proporcion": 25.091175415520752,
+          "proporcion_start": 48.30503407867991,
+          "proporcion_end": 73.39620949420066
+        },
+        {
+          "año_mes": 1577847600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 168.12,
+          "proporcion": 25.121032813340506,
+          "proporcion_start": 45.81166696551311,
+          "proporcion_end": 70.93269977885362
+        },
+        {
+          "año_mes": 1580526000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 174.45,
+          "proporcion": 26.467509216974406,
+          "proporcion_start": 46.250246544582836,
+          "proporcion_end": 72.71775576155724
+        },
+        {
+          "año_mes": 1583031600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 132.97,
+          "proporcion": 11.82333902404325,
+          "proporcion_start": 72.26668089344147,
+          "proporcion_end": 84.09001991748472
+        },
+        {
+          "año_mes": 1585710000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 132.28,
+          "proporcion": 23.40410474168436,
+          "proporcion_start": 45.46001415428168,
+          "proporcion_end": 68.86411889596604
+        },
+        {
+          "año_mes": 1588302000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 151.49,
+          "proporcion": 23.88377372769124,
+          "proporcion_start": 49.16913665888882,
+          "proporcion_end": 73.05291038658005
+        },
+        {
+          "año_mes": 1590980400000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 129.23,
+          "proporcion": 22.873780908720814,
+          "proporcion_start": 48.17069932916792,
+          "proporcion_end": 71.04448023788873
+        },
+        {
+          "año_mes": 1593572400000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 149.23,
+          "proporcion": 24.102398449487193,
+          "proporcion_start": 47.31002180408625,
+          "proporcion_end": 71.41242025357344
+        },
+        {
+          "año_mes": 1596250800000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 384.67,
+          "proporcion": 25.44517648303963,
+          "proporcion_start": 48.38069534846801,
+          "proporcion_end": 73.82587183150764
+        },
+        {
+          "año_mes": 1598929200000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 401.32,
+          "proporcion": 26.162009934940478,
+          "proporcion_start": 47.88328400631038,
+          "proporcion_end": 74.04529394125086
+        },
+        {
+          "año_mes": 1601521200000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 429.44,
+          "proporcion": 25.676225097457728,
+          "proporcion_start": 48.358166120584514,
+          "proporcion_end": 74.03439121804224
+        },
+        {
+          "año_mes": 1604199600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 461.08,
+          "proporcion": 26.086120179006862,
+          "proporcion_start": 47.62408558836342,
+          "proporcion_end": 73.71020576737028
+        },
+        {
+          "año_mes": 1606791600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 499.13,
+          "proporcion": 25.094646026375194,
+          "proporcion_start": 47.593502229774906,
+          "proporcion_end": 72.6881482561501
+        },
+        {
+          "año_mes": 1609470000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 617.55,
+          "proporcion": 26.02380089506199,
+          "proporcion_start": 48.747587462389696,
+          "proporcion_end": 74.77138835745168
+        },
+        {
+          "año_mes": 1612148400000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 513.59,
+          "proporcion": 25.67256840653024,
+          "proporcion_start": 48.51490097673628,
+          "proporcion_end": 74.18746938326652
+        },
+        {
+          "año_mes": 1614567600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 549.16,
+          "proporcion": 25.89778777546699,
+          "proporcion_start": 47.44658074313013,
+          "proporcion_end": 73.34436851859712
+        },
+        {
+          "año_mes": 1617246000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 593.9,
+          "proporcion": 25.861092967559323,
+          "proporcion_start": 48.0474635314609,
+          "proporcion_end": 73.90855649902022
+        },
+        {
+          "año_mes": 1619838000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 577.62,
+          "proporcion": 24.653850750345722,
+          "proporcion_start": 47.874874088743965,
+          "proporcion_end": 72.52872483908969
+        },
+        {
+          "año_mes": 1622516400000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 243.08,
+          "proporcion": 21.981678919906315,
+          "proporcion_start": 41.09944566524692,
+          "proporcion_end": 63.08112458515323
+        },
+        {
+          "año_mes": 1625108400000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 298.8,
+          "proporcion": 24.069211064748433,
+          "proporcion_start": 47.01793107892574,
+          "proporcion_end": 71.08714214367417
+        },
+        {
+          "año_mes": 1627786800000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 240.37,
+          "proporcion": 23.80419497316247,
+          "proporcion_start": 45.54061280674999,
+          "proporcion_end": 69.34480777991246
+        },
+        {
+          "año_mes": 1630465200000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 283.68,
+          "proporcion": 24.959746601557345,
+          "proporcion_start": 47.12683119968325,
+          "proporcion_end": 72.0865778012406
+        },
+        {
+          "año_mes": 1633057200000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 226.22,
+          "proporcion": 23.451478805345054,
+          "proporcion_start": 45.3572872500337,
+          "proporcion_end": 68.80876605537875
+        },
+        {
+          "año_mes": 1635735600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 239.27,
+          "proporcion": 22.845712430657006,
+          "proporcion_start": 44.17232390936955,
+          "proporcion_end": 67.01803634002655
+        },
+        {
+          "año_mes": 1638327600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 223.17,
+          "proporcion": 22.156806290519544,
+          "proporcion_start": 43.64842190959364,
+          "proporcion_end": 65.80522820011318
+        },
+        {
+          "año_mes": 1641006000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 263.74,
+          "proporcion": 21.333527465683062,
+          "proporcion_start": 41.23371108253052,
+          "proporcion_end": 62.56723854821358
+        },
+        {
+          "año_mes": 1643684400000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 1131.16,
+          "proporcion": 32.26732162061165,
+          "proporcion_start": 37.59680966684638,
+          "proporcion_end": 69.86413128745804
+        },
+        {
+          "año_mes": 1646103600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 777.02,
+          "proporcion": 25.53676772656314,
+          "proporcion_start": 49.64127844877167,
+          "proporcion_end": 75.17804617533481
+        },
+        {
+          "año_mes": 1648782000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 344.98,
+          "proporcion": 24.823884119708428,
+          "proporcion_start": 42.94277223305582,
+          "proporcion_end": 67.76665635276424
+        },
+        {
+          "año_mes": 1651374000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 774.24,
+          "proporcion": 26.177097068668225,
+          "proporcion_start": 46.46076343104439,
+          "proporcion_end": 72.63786049971262
+        },
+        {
+          "año_mes": 1654052400000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 949.42,
+          "proporcion": 36.451102647582786,
+          "proporcion_start": 27.706324098531866,
+          "proporcion_end": 64.15742674611465
+        },
+        {
+          "año_mes": 1656644400000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 524.89,
+          "proporcion": 25.2321847479137,
+          "proporcion_start": 47.206572318578615,
+          "proporcion_end": 72.43875706649231
+        },
+        {
+          "año_mes": 1659322800000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 1050.5,
+          "proporcion": 28.590557631542417,
+          "proporcion_start": 44.57568673131407,
+          "proporcion_end": 73.16624436285649
+        },
+        {
+          "año_mes": 1662001200000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 493.74,
+          "proporcion": 25.4708658980113,
+          "proporcion_start": 40.824885862415854,
+          "proporcion_end": 66.29575176042715
+        },
+        {
+          "año_mes": 1664593200000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 1244.76,
+          "proporcion": 28.118032668384945,
+          "proporcion_start": 42.975122602447314,
+          "proporcion_end": 71.09315527083226
+        },
+        {
+          "año_mes": 1667271600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 1391.14,
+          "proporcion": 29.77222580099773,
+          "proporcion_start": 43.35114636145538,
+          "proporcion_end": 73.12337216245311
+        },
+        {
+          "año_mes": 1669863600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 1235.97,
+          "proporcion": 29.09595542278438,
+          "proporcion_start": 42.93782118736037,
+          "proporcion_end": 72.03377661014476
+        },
+        {
+          "año_mes": 1672542000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 1342.97,
+          "proporcion": 29.08756570839443,
+          "proporcion_start": 43.6483509819168,
+          "proporcion_end": 72.73591669031123
+        },
+        {
+          "año_mes": 1675220400000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 1469.34,
+          "proporcion": 29.496053381725908,
+          "proporcion_start": 43.539068710503706,
+          "proporcion_end": 73.03512209222961
+        },
+        {
+          "año_mes": 1677639600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 1574.85,
+          "proporcion": 15.307342392255203,
+          "proporcion_start": 22.457086759588655,
+          "proporcion_end": 37.764429151843856
+        },
+        {
+          "año_mes": 1680318000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 1576.95,
+          "proporcion": 28.34110327128166,
+          "proporcion_start": 43.213555276788306,
+          "proporcion_end": 71.55465854806997
+        },
+        {
+          "año_mes": 1682910000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 1778.73,
+          "proporcion": 28.67850849119119,
+          "proporcion_start": 44.77799400545926,
+          "proporcion_end": 73.45650249665046
+        },
+        {
+          "año_mes": 1685588400000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 1748.36,
+          "proporcion": 28.14021499976662,
+          "proporcion_start": 44.64552722262729,
+          "proporcion_end": 72.7857422223939
+        },
+        {
+          "año_mes": 1688180400000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 2005.15,
+          "proporcion": 28.299823015843895,
+          "proporcion_start": 45.10132131233611,
+          "proporcion_end": 73.40114432818001
+        },
+        {
+          "año_mes": 1690858800000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 2049.13,
+          "proporcion": 27.821896846915962,
+          "proporcion_start": 44.70840455821114,
+          "proporcion_end": 72.5303014051271
+        },
+        {
+          "año_mes": 1693537200000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 1138.22,
+          "proporcion": 26.43359436687754,
+          "proporcion_start": 43.41796022257522,
+          "proporcion_end": 69.85155458945276
+        },
+        {
+          "año_mes": 1696129200000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 1763.68,
+          "proporcion": 27.168397605543117,
+          "proporcion_start": 44.143100532067294,
+          "proporcion_end": 71.31149813761041
+        },
+        {
+          "año_mes": 1698807600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 3015.04,
+          "proporcion": 27.998595909937652,
+          "proporcion_start": 45.082434573303345,
+          "proporcion_end": 73.081030483241
+        },
+        {
+          "año_mes": 1701399600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 3676.12,
+          "proporcion": 26.68614100943784,
+          "proporcion_start": 45.6394338018742,
+          "proporcion_end": 72.32557481131204
+        },
+        {
+          "año_mes": 1704078000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 4965.32,
+          "proporcion": 26.421550081441236,
+          "proporcion_start": 46.02837592702268,
+          "proporcion_end": 72.44992600846392
+        },
+        {
+          "año_mes": 1706756400000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 5418.88,
+          "proporcion": 26.473245015577007,
+          "proporcion_start": 45.60797722634955,
+          "proporcion_end": 72.08122224192655
+        },
+        {
+          "año_mes": 1709262000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 6538.78,
+          "proporcion": 26.959927763598955,
+          "proporcion_start": 46.071486000074216,
+          "proporcion_end": 73.03141376367317
+        },
+        {
+          "año_mes": 1711940400000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 6606.44,
+          "proporcion": 26.746341651029237,
+          "proporcion_start": 45.51996226774115,
+          "proporcion_end": 72.26630391877039
+        },
+        {
+          "año_mes": 1714532400000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 7013.69,
+          "proporcion": 26.56221832730159,
+          "proporcion_start": 46.23742082866876,
+          "proporcion_end": 72.79963915597035
+        },
+        {
+          "año_mes": 1717210800000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 7614.96,
+          "proporcion": 26.87215948489875,
+          "proporcion_start": 45.99094564031769,
+          "proporcion_end": 72.86310512521644
+        },
+        {
+          "año_mes": 1719802800000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 8781.24,
+          "proporcion": 26.85182636966258,
+          "proporcion_start": 45.48992770600975,
+          "proporcion_end": 72.34175407567233
+        },
+        {
+          "año_mes": 1722481200000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 8593.17,
+          "proporcion": 27.037970716628916,
+          "proporcion_start": 45.804682293610256,
+          "proporcion_end": 72.84265301023918
+        },
+        {
+          "año_mes": 1725159600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 7813.76,
+          "proporcion": 26.048688607932526,
+          "proporcion_start": 47.19874653087418,
+          "proporcion_end": 73.24743513880671
+        },
+        {
+          "año_mes": 1727751600000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 8693.5,
+          "proporcion": 26.31323264880892,
+          "proporcion_start": 47.43597698564493,
+          "proporcion_end": 73.74920963445385
+        },
+        {
+          "año_mes": 1730430000000,
+          "producto": "Gas Oil Grado 3",
+          "sum": 2696,
+          "proporcion": 34.78709677419355,
+          "proporcion_start": 65.21290322580646,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1483239600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 80.11,
+          "proporcion": 25.737325708410967,
+          "proporcion_start": 22.505301034504907,
+          "proporcion_end": 48.242626742915874
+        },
+        {
+          "año_mes": 1485918000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 58.08,
+          "proporcion": 25.6673148311826,
+          "proporcion_start": 22.25561251546756,
+          "proporcion_end": 47.92292734665016
+        },
+        {
+          "año_mes": 1488337200000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 89.59,
+          "proporcion": 26.278121608541344,
+          "proporcion_start": 22.752471181767515,
+          "proporcion_end": 49.03059279030886
+        },
+        {
+          "año_mes": 1491015600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 137.06,
+          "proporcion": 28.019461934745284,
+          "proporcion_start": 23.663014146700473,
+          "proporcion_end": 51.682476081445756
+        },
+        {
+          "año_mes": 1493607600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 45.45,
+          "proporcion": 23.382035188805432,
+          "proporcion_start": 20.91778989607984,
+          "proporcion_end": 44.29982508488527
+        },
+        {
+          "año_mes": 1496286000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 43.02,
+          "proporcion": 24.05905709971478,
+          "proporcion_start": 21.883563559085065,
+          "proporcion_end": 45.94262065879985
+        },
+        {
+          "año_mes": 1498878000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 129.82,
+          "proporcion": 26.80459200528576,
+          "proporcion_start": 23.333746283448956,
+          "proporcion_end": 50.138338288734715
+        },
+        {
+          "año_mes": 1501556400000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 47.62,
+          "proporcion": 23.813572035805368,
+          "proporcion_start": 21.53823073461019,
+          "proporcion_end": 45.35180277041556
+        },
+        {
+          "año_mes": 1504234800000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 51.55,
+          "proporcion": 25.24856737032865,
+          "proporcion_start": 22.63309986775726,
+          "proporcion_end": 47.88166723808591
+        },
+        {
+          "año_mes": 1506826800000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 163.03,
+          "proporcion": 27.785731329038416,
+          "proporcion_start": 23.51637863448887,
+          "proporcion_end": 51.302109963527286
+        },
+        {
+          "año_mes": 1509505200000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 221.94,
+          "proporcion": 46.12602876382077,
+          "proporcion_start": 26.577437858508603,
+          "proporcion_end": 72.70346662232937
+        },
+        {
+          "año_mes": 1512097200000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 141.78,
+          "proporcion": 26.835500539435582,
+          "proporcion_start": 23.106770389718545,
+          "proporcion_end": 49.94227092915413
+        },
+        {
+          "año_mes": 1514775600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 130.7,
+          "proporcion": 26.87641373637672,
+          "proporcion_start": 22.79457125231339,
+          "proporcion_end": 49.67098498869011
+        },
+        {
+          "año_mes": 1517454000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 153.42,
+          "proporcion": 27.288250151186368,
+          "proporcion_start": 22.850485575041795,
+          "proporcion_end": 50.13873572622816
+        },
+        {
+          "año_mes": 1519873200000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 69.68,
+          "proporcion": 24.90884392650318,
+          "proporcion_start": 22.206334453421036,
+          "proporcion_end": 47.11517837992422
+        },
+        {
+          "año_mes": 1522551600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 144.72,
+          "proporcion": 26.447851751676744,
+          "proporcion_start": 22.97739359271916,
+          "proporcion_end": 49.425245344395904
+        },
+        {
+          "año_mes": 1525143600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 83.65,
+          "proporcion": 24.800616680008304,
+          "proporcion_start": 21.438524711672443,
+          "proporcion_end": 46.23914139168075
+        },
+        {
+          "año_mes": 1527822000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 170.77,
+          "proporcion": 27.15548770791591,
+          "proporcion_start": 23.10212129885825,
+          "proporcion_end": 50.25760900677416
+        },
+        {
+          "año_mes": 1530414000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 199.76,
+          "proporcion": 27.44747798128581,
+          "proporcion_start": 23.175641325107517,
+          "proporcion_end": 50.62311930639333
+        },
+        {
+          "año_mes": 1533092400000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 215.03,
+          "proporcion": 27.15470973770947,
+          "proporcion_start": 22.66912498263604,
+          "proporcion_end": 49.82383472034551
+        },
+        {
+          "año_mes": 1535770800000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 289.6,
+          "proporcion": 27.31869292883556,
+          "proporcion_start": 22.21907780544864,
+          "proporcion_end": 49.5377707342842
+        },
+        {
+          "año_mes": 1538362800000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 150.53,
+          "proporcion": 25.763773597822926,
+          "proporcion_start": 22.013794992041348,
+          "proporcion_end": 47.77756858986427
+        },
+        {
+          "año_mes": 1541041200000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 209.37,
+          "proporcion": 27.211052337444603,
+          "proporcion_start": 22.48157727148668,
+          "proporcion_end": 49.692629608931284
+        },
+        {
+          "año_mes": 1543633200000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 237.68,
+          "proporcion": 25.858673774683133,
+          "proporcion_start": 22.403307403579397,
+          "proporcion_end": 48.26198117826253
+        },
+        {
+          "año_mes": 1546311600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 272.69,
+          "proporcion": 27.01077697214628,
+          "proporcion_start": 20.654542573002104,
+          "proporcion_end": 47.665319545148385
+        },
+        {
+          "año_mes": 1548990000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 240.49,
+          "proporcion": 25.9428263214671,
+          "proporcion_start": 22.399137001078753,
+          "proporcion_end": 48.34196332254585
+        },
+        {
+          "año_mes": 1551409200000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 321.34,
+          "proporcion": 26.40448976573349,
+          "proporcion_start": 22.80791132219657,
+          "proporcion_end": 49.21240108793006
+        },
+        {
+          "año_mes": 1554087600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 242.54,
+          "proporcion": 25.228580047224273,
+          "proporcion_start": 22.31502959318473,
+          "proporcion_end": 47.543609640409
+        },
+        {
+          "año_mes": 1556679600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 152.24,
+          "proporcion": 24.364637347160873,
+          "proporcion_start": 21.911209269573014,
+          "proporcion_end": 46.27584661673389
+        },
+        {
+          "año_mes": 1559358000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 264.22,
+          "proporcion": 25.24917578479622,
+          "proporcion_start": 21.955181805150747,
+          "proporcion_end": 47.204357589946966
+        },
+        {
+          "año_mes": 1561950000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 300.12,
+          "proporcion": 26.01752880289199,
+          "proporcion_start": 22.219621509626972,
+          "proporcion_end": 48.23715031251896
+        },
+        {
+          "año_mes": 1564628400000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 124.16,
+          "proporcion": 23.97003745318352,
+          "proporcion_start": 21.37148152438318,
+          "proporcion_end": 45.3415189775667
+        },
+        {
+          "año_mes": 1567306800000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 368.63,
+          "proporcion": 26.894539087294344,
+          "proporcion_start": 22.197497537664606,
+          "proporcion_end": 49.09203662495895
+        },
+        {
+          "año_mes": 1569898800000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 127.85,
+          "proporcion": 24.30146360007603,
+          "proporcion_start": 21.596654628397648,
+          "proporcion_end": 45.89811822847368
+        },
+        {
+          "año_mes": 1572577200000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 373.03,
+          "proporcion": 26.09258274810442,
+          "proporcion_start": 22.490976749391457,
+          "proporcion_end": 48.58355949749588
+        },
+        {
+          "año_mes": 1575169200000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 348.9,
+          "proporcion": 26.074674159990437,
+          "proporcion_start": 22.230359918689466,
+          "proporcion_end": 48.3050340786799
+        },
+        {
+          "año_mes": 1577847600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 165.23,
+          "proporcion": 24.689199689199686,
+          "proporcion_start": 21.122467276313426,
+          "proporcion_end": 45.81166696551311
+        },
+        {
+          "año_mes": 1580526000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 163.12,
+          "proporcion": 24.748524525496503,
+          "proporcion_start": 21.50172201908634,
+          "proporcion_end": 46.25024654458284
+        },
+        {
+          "año_mes": 1583031600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 440.36,
+          "proporcion": 39.155640916204305,
+          "proporcion_start": 33.11103997723717,
+          "proporcion_end": 72.26668089344147
+        },
+        {
+          "año_mes": 1585710000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 138.41,
+          "proporcion": 24.488676574663838,
+          "proporcion_start": 20.971337579617842,
+          "proporcion_end": 45.46001415428168
+        },
+        {
+          "año_mes": 1588302000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 176.79,
+          "proporcion": 27.872548401336942,
+          "proporcion_start": 21.296588257551868,
+          "proporcion_end": 49.16913665888881
+        },
+        {
+          "año_mes": 1590980400000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 145.31,
+          "proporcion": 25.719949731844167,
+          "proporcion_start": 22.45074959732375,
+          "proporcion_end": 48.17069932916792
+        },
+        {
+          "año_mes": 1593572400000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 158.33,
+          "proporcion": 25.572155374303478,
+          "proporcion_start": 21.73786642978277,
+          "proporcion_end": 47.31002180408625
+        },
+        {
+          "año_mes": 1596250800000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 393.02,
+          "proporcion": 25.997512832724766,
+          "proporcion_start": 22.383182515743236,
+          "proporcion_end": 48.380695348468
+        },
+        {
+          "año_mes": 1598929200000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 391.36,
+          "proporcion": 25.512718549133623,
+          "proporcion_start": 22.370565457176752,
+          "proporcion_end": 47.883284006310376
+        },
+        {
+          "año_mes": 1601521200000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 438.95,
+          "proporcion": 26.244828163489824,
+          "proporcion_start": 22.11333795709469,
+          "proporcion_end": 48.358166120584514
+        },
+        {
+          "año_mes": 1604199600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 451.43,
+          "proporcion": 25.540160563045607,
+          "proporcion_start": 22.083925025317814,
+          "proporcion_end": 47.62408558836342
+        },
+        {
+          "año_mes": 1606791600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 514.47,
+          "proporcion": 25.865891733995642,
+          "proporcion_start": 21.727610495779263,
+          "proporcion_end": 47.593502229774906
+        },
+        {
+          "año_mes": 1609470000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 621.18,
+          "proporcion": 26.176770528693392,
+          "proporcion_start": 22.570816933696303,
+          "proporcion_end": 48.747587462389696
+        },
+        {
+          "año_mes": 1612148400000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 526.82,
+          "proporcion": 26.333889849740572,
+          "proporcion_start": 22.181011126995713,
+          "proporcion_end": 48.514900976736286
+        },
+        {
+          "año_mes": 1614567600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 550,
+          "proporcion": 25.93740126102929,
+          "proporcion_start": 21.509179482100837,
+          "proporcion_end": 47.44658074313013
+        },
+        {
+          "año_mes": 1617246000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 599.32,
+          "proporcion": 26.097104289135636,
+          "proporcion_start": 21.95035924232527,
+          "proporcion_end": 48.047463531460906
+        },
+        {
+          "año_mes": 1619838000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 614.23,
+          "proporcion": 26.21643077868643,
+          "proporcion_start": 21.658443310057535,
+          "proporcion_end": 47.874874088743965
+        },
+        {
+          "año_mes": 1622516400000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 241.49,
+          "proporcion": 21.837895517394177,
+          "proporcion_start": 19.26155014785274,
+          "proporcion_end": 41.09944566524692
+        },
+        {
+          "año_mes": 1625108400000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 315.59,
+          "proporcion": 25.421694511124354,
+          "proporcion_start": 21.596236567801387,
+          "proporcion_end": 47.01793107892574
+        },
+        {
+          "año_mes": 1627786800000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 244.48,
+          "proporcion": 24.211214323912138,
+          "proporcion_start": 21.329398482837846,
+          "proporcion_end": 45.540612806749984
+        },
+        {
+          "año_mes": 1630465200000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 292.09,
+          "proporcion": 25.69970524833927,
+          "proporcion_start": 21.42712595134398,
+          "proporcion_end": 47.12683119968325
+        },
+        {
+          "año_mes": 1633057200000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 230.87,
+          "proporcion": 23.933528917823416,
+          "proporcion_start": 21.423758332210276,
+          "proporcion_end": 45.35728725003369
+        },
+        {
+          "año_mes": 1635735600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 244.07,
+          "proporcion": 23.304020700256846,
+          "proporcion_start": 20.8683032091127,
+          "proporcion_end": 44.172323909369545
+        },
+        {
+          "año_mes": 1638327600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 226.88,
+          "proporcion": 22.52514321455874,
+          "proporcion_start": 21.123278695034898,
+          "proporcion_end": 43.64842190959364
+        },
+        {
+          "año_mes": 1641006000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 270.19,
+          "proporcion": 21.855258155580902,
+          "proporcion_start": 19.378452926949617,
+          "proporcion_end": 41.23371108253052
+        },
+        {
+          "año_mes": 1643684400000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 722.83,
+          "proporcion": 20.619353660867358,
+          "proporcion_start": 16.97745600597902,
+          "proporcion_end": 37.596809666846376
+        },
+        {
+          "año_mes": 1646103600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 794.16,
+          "proporcion": 26.100073946265713,
+          "proporcion_start": 23.54120450250596,
+          "proporcion_end": 49.64127844877167
+        },
+        {
+          "año_mes": 1648782000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 321.73,
+          "proporcion": 23.150873203761936,
+          "proporcion_start": 19.791899029293884,
+          "proporcion_end": 42.94277223305582
+        },
+        {
+          "año_mes": 1651374000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 767.72,
+          "proporcion": 25.95665550934848,
+          "proporcion_start": 20.50410792169592,
+          "proporcion_end": 46.4607634310444
+        },
+        {
+          "año_mes": 1654052400000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 393.45,
+          "proporcion": 15.105734381718783,
+          "proporcion_start": 12.600589716813076,
+          "proporcion_end": 27.70632409853186
+        },
+        {
+          "año_mes": 1656644400000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 539.19,
+          "proporcion": 25.919605430142678,
+          "proporcion_start": 21.286966888435945,
+          "proporcion_end": 47.20657231857862
+        },
+        {
+          "año_mes": 1659322800000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 909.23,
+          "proporcion": 24.745733189269217,
+          "proporcion_start": 19.829953542044855,
+          "proporcion_end": 44.57568673131407
+        },
+        {
+          "año_mes": 1662001200000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 414.72,
+          "proporcion": 21.394413061982515,
+          "proporcion_start": 19.43047280043334,
+          "proporcion_end": 40.824885862415854
+        },
+        {
+          "año_mes": 1664593200000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 1057.56,
+          "proporcion": 23.88934945594105,
+          "proporcion_start": 19.085773146506256,
+          "proporcion_end": 42.97512260244731
+        },
+        {
+          "año_mes": 1667271600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 1124.79,
+          "proporcion": 24.071985464226632,
+          "proporcion_start": 19.279160897228746,
+          "proporcion_end": 43.35114636145538
+        },
+        {
+          "año_mes": 1669863600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 1008.53,
+          "proporcion": 23.74179302292186,
+          "proporcion_start": 19.19602816443851,
+          "proporcion_end": 42.93782118736037
+        },
+        {
+          "año_mes": 1672542000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 1124.12,
+          "proporcion": 24.347464473607264,
+          "proporcion_start": 19.300886508309528,
+          "proporcion_end": 43.64835098191679
+        },
+        {
+          "año_mes": 1675220400000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 1206.14,
+          "proporcion": 24.212483037169676,
+          "proporcion_start": 19.326585673334023,
+          "proporcion_end": 43.5390687105037
+        },
+        {
+          "año_mes": 1677639600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 1294.78,
+          "proporcion": 12.585097490328726,
+          "proporcion_start": 9.87198926925993,
+          "proporcion_end": 22.457086759588655
+        },
+        {
+          "año_mes": 1680318000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 1350.59,
+          "proporcion": 24.27293868997768,
+          "proporcion_start": 18.940616586810634,
+          "proporcion_end": 43.21355527678831
+        },
+        {
+          "año_mes": 1682910000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 1535.46,
+          "proporcion": 24.756260167582724,
+          "proporcion_start": 20.02173383787654,
+          "proporcion_end": 44.77799400545926
+        },
+        {
+          "año_mes": 1685588400000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 1547.68,
+          "proporcion": 24.91022898650095,
+          "proporcion_start": 19.735298236126336,
+          "proporcion_end": 44.64552722262729
+        },
+        {
+          "año_mes": 1688180400000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 1790,
+          "proporcion": 25.26328863095558,
+          "proporcion_start": 19.838032681380533,
+          "proporcion_end": 45.10132131233611
+        },
+        {
+          "año_mes": 1690858800000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 1835.87,
+          "proporcion": 24.92637644480711,
+          "proporcion_start": 19.78202811340403,
+          "proporcion_end": 44.70840455821114
+        },
+        {
+          "año_mes": 1693537200000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 1040.23,
+          "proporcion": 24.157911360068372,
+          "proporcion_start": 19.260048862506846,
+          "proporcion_end": 43.41796022257522
+        },
+        {
+          "año_mes": 1696129200000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 1602.08,
+          "proporcion": 24.679049734582527,
+          "proporcion_start": 19.464050797484774,
+          "proporcion_end": 44.1431005320673
+        },
+        {
+          "año_mes": 1698807600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 2715.91,
+          "proporcion": 25.220782018732347,
+          "proporcion_start": 19.861652554571,
+          "proporcion_end": 45.082434573303345
+        },
+        {
+          "año_mes": 1701399600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 3454.66,
+          "proporcion": 25.078491425651105,
+          "proporcion_start": 20.5609423762231,
+          "proporcion_end": 45.639433801874205
+        },
+        {
+          "año_mes": 1704078000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 4744.08,
+          "proporcion": 25.244283814610892,
+          "proporcion_start": 20.784092112411788,
+          "proporcion_end": 46.02837592702268
+        },
+        {
+          "año_mes": 1706756400000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 5070.23,
+          "proporcion": 24.76996004254182,
+          "proporcion_start": 20.83801718380773,
+          "proporcion_end": 45.60797722634955
+        },
+        {
+          "año_mes": 1709262000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 6173.73,
+          "proporcion": 25.45479658773713,
+          "proporcion_start": 20.616689412337088,
+          "proporcion_end": 46.071486000074216
+        },
+        {
+          "año_mes": 1711940400000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 6243.03,
+          "proporcion": 25.275066952492576,
+          "proporcion_start": 20.244895315248574,
+          "proporcion_end": 45.51996226774115
+        },
+        {
+          "año_mes": 1714532400000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 6845.46,
+          "proporcion": 25.92509835347869,
+          "proporcion_start": 20.31232247519008,
+          "proporcion_end": 46.23742082866877
+        },
+        {
+          "año_mes": 1717210800000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 7193.89,
+          "proporcion": 25.386260649670948,
+          "proporcion_start": 20.604684990646742,
+          "proporcion_end": 45.99094564031769
+        },
+        {
+          "año_mes": 1719802800000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 8280.64,
+          "proporcion": 25.32106029554855,
+          "proporcion_start": 20.168867410461196,
+          "proporcion_end": 45.489927706009745
+        },
+        {
+          "año_mes": 1722481200000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 7995.33,
+          "proporcion": 25.156897676850882,
+          "proporcion_start": 20.647784616759374,
+          "proporcion_end": 45.804682293610256
+        },
+        {
+          "año_mes": 1725159600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 7888.63,
+          "proporcion": 26.298282313917344,
+          "proporcion_start": 20.900464216956838,
+          "proporcion_end": 47.19874653087418
+        },
+        {
+          "año_mes": 1727751600000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 8690.95,
+          "proporcion": 26.305514383063887,
+          "proporcion_start": 21.130462602581048,
+          "proporcion_end": 47.435976985644935
+        },
+        {
+          "año_mes": 1730430000000,
+          "producto": "Nafta (premium) de más de 95 Ron",
+          "sum": 2754,
+          "proporcion": 35.535483870967745,
+          "proporcion_start": 29.67741935483871,
+          "proporcion_end": 65.21290322580646
+        },
+        {
+          "año_mes": 1483239600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 70.05,
+          "proporcion": 22.50530103450491,
+          "proporcion_start": 0,
+          "proporcion_end": 22.50530103450491
+        },
+        {
+          "año_mes": 1485918000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 50.36,
+          "proporcion": 22.25561251546756,
+          "proporcion_start": 0,
+          "proporcion_end": 22.25561251546756
+        },
+        {
+          "año_mes": 1488337200000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 77.57,
+          "proporcion": 22.75247118176752,
+          "proporcion_start": 0,
+          "proporcion_end": 22.75247118176752
+        },
+        {
+          "año_mes": 1491015600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 115.75,
+          "proporcion": 23.66301414670047,
+          "proporcion_start": 0,
+          "proporcion_end": 23.66301414670047
+        },
+        {
+          "año_mes": 1493607600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 40.66,
+          "proporcion": 20.917789896079842,
+          "proporcion_start": 0,
+          "proporcion_end": 20.917789896079842
+        },
+        {
+          "año_mes": 1496286000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 39.13,
+          "proporcion": 21.883563559085065,
+          "proporcion_start": 0,
+          "proporcion_end": 21.883563559085065
+        },
+        {
+          "año_mes": 1498878000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 113.01,
+          "proporcion": 23.33374628344896,
+          "proporcion_start": 0,
+          "proporcion_end": 23.33374628344896
+        },
+        {
+          "año_mes": 1501556400000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 43.07,
+          "proporcion": 21.53823073461019,
+          "proporcion_start": 0,
+          "proporcion_end": 21.53823073461019
+        },
+        {
+          "año_mes": 1504234800000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 46.21,
+          "proporcion": 22.633099867757263,
+          "proporcion_start": 0,
+          "proporcion_end": 22.633099867757263
+        },
+        {
+          "año_mes": 1506826800000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 137.98,
+          "proporcion": 23.51637863448887,
+          "proporcion_start": 0,
+          "proporcion_end": 23.51637863448887
+        },
+        {
+          "año_mes": 1509505200000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 127.88,
+          "proporcion": 26.577437858508606,
+          "proporcion_start": 0,
+          "proporcion_end": 26.577437858508606
+        },
+        {
+          "año_mes": 1512097200000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 122.08,
+          "proporcion": 23.106770389718545,
+          "proporcion_start": 0,
+          "proporcion_end": 23.106770389718545
+        },
+        {
+          "año_mes": 1514775600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 110.85,
+          "proporcion": 22.794571252313386,
+          "proporcion_start": 0,
+          "proporcion_end": 22.794571252313386
+        },
+        {
+          "año_mes": 1517454000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 128.47,
+          "proporcion": 22.850485575041798,
+          "proporcion_start": 0,
+          "proporcion_end": 22.850485575041798
+        },
+        {
+          "año_mes": 1519873200000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 62.12,
+          "proporcion": 22.206334453421032,
+          "proporcion_start": 0,
+          "proporcion_end": 22.206334453421032
+        },
+        {
+          "año_mes": 1522551600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 125.73,
+          "proporcion": 22.977393592719164,
+          "proporcion_start": 0,
+          "proporcion_end": 22.977393592719164
+        },
+        {
+          "año_mes": 1525143600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 72.31,
+          "proporcion": 21.438524711672446,
+          "proporcion_start": 0,
+          "proporcion_end": 21.438524711672446
+        },
+        {
+          "año_mes": 1527822000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 145.28,
+          "proporcion": 23.102121298858254,
+          "proporcion_start": 0,
+          "proporcion_end": 23.102121298858254
+        },
+        {
+          "año_mes": 1530414000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 168.67,
+          "proporcion": 23.175641325107517,
+          "proporcion_start": 0,
+          "proporcion_end": 23.175641325107517
+        },
+        {
+          "año_mes": 1533092400000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 179.51,
+          "proporcion": 22.66912498263604,
+          "proporcion_start": 0,
+          "proporcion_end": 22.66912498263604
+        },
+        {
+          "año_mes": 1535770800000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 235.54,
+          "proporcion": 22.21907780544864,
+          "proporcion_start": 0,
+          "proporcion_end": 22.21907780544864
+        },
+        {
+          "año_mes": 1538362800000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 128.62,
+          "proporcion": 22.01379499204135,
+          "proporcion_start": 0,
+          "proporcion_end": 22.01379499204135
+        },
+        {
+          "año_mes": 1541041200000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 172.98,
+          "proporcion": 22.48157727148668,
+          "proporcion_start": 0,
+          "proporcion_end": 22.48157727148668
+        },
+        {
+          "año_mes": 1543633200000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 205.92,
+          "proporcion": 22.403307403579394,
+          "proporcion_start": 0,
+          "proporcion_end": 22.403307403579394
+        },
+        {
+          "año_mes": 1546311600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 208.52,
+          "proporcion": 20.654542573002104,
+          "proporcion_start": 0,
+          "proporcion_end": 20.654542573002104
+        },
+        {
+          "año_mes": 1548990000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 207.64,
+          "proporcion": 22.39913700107875,
+          "proporcion_start": 0,
+          "proporcion_end": 22.39913700107875
+        },
+        {
+          "año_mes": 1551409200000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 277.57,
+          "proporcion": 22.80791132219657,
+          "proporcion_start": 0,
+          "proporcion_end": 22.80791132219657
+        },
+        {
+          "año_mes": 1554087600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 214.53,
+          "proporcion": 22.315029593184725,
+          "proporcion_start": 0,
+          "proporcion_end": 22.315029593184725
+        },
+        {
+          "año_mes": 1556679600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 136.91,
+          "proporcion": 21.91120926957301,
+          "proporcion_start": 0,
+          "proporcion_end": 21.91120926957301
+        },
+        {
+          "año_mes": 1559358000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 229.75,
+          "proporcion": 21.955181805150747,
+          "proporcion_start": 0,
+          "proporcion_end": 21.955181805150747
+        },
+        {
+          "año_mes": 1561950000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 256.31,
+          "proporcion": 22.219621509626972,
+          "proporcion_start": 0,
+          "proporcion_end": 22.219621509626972
+        },
+        {
+          "año_mes": 1564628400000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 110.7,
+          "proporcion": 21.37148152438318,
+          "proporcion_start": 0,
+          "proporcion_end": 21.37148152438318
+        },
+        {
+          "año_mes": 1567306800000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 304.25,
+          "proporcion": 22.19749753766461,
+          "proporcion_start": 0,
+          "proporcion_end": 22.19749753766461
+        },
+        {
+          "año_mes": 1569898800000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 113.62,
+          "proporcion": 21.596654628397644,
+          "proporcion_start": 0,
+          "proporcion_end": 21.596654628397644
+        },
+        {
+          "año_mes": 1572577200000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 321.54,
+          "proporcion": 22.490976749391457,
+          "proporcion_start": 0,
+          "proporcion_end": 22.490976749391457
+        },
+        {
+          "año_mes": 1575169200000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 297.46,
+          "proporcion": 22.230359918689466,
+          "proporcion_start": 0,
+          "proporcion_end": 22.230359918689466
+        },
+        {
+          "año_mes": 1577847600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 141.36,
+          "proporcion": 21.12246727631343,
+          "proporcion_start": 0,
+          "proporcion_end": 21.12246727631343
+        },
+        {
+          "año_mes": 1580526000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 141.72,
+          "proporcion": 21.50172201908634,
+          "proporcion_start": 0,
+          "proporcion_end": 21.50172201908634
+        },
+        {
+          "año_mes": 1583031600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 372.38,
+          "proporcion": 33.11103997723716,
+          "proporcion_start": 0,
+          "proporcion_end": 33.11103997723716
+        },
+        {
+          "año_mes": 1585710000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 118.53,
+          "proporcion": 20.97133757961784,
+          "proporcion_start": 0,
+          "proporcion_end": 20.97133757961784
+        },
+        {
+          "año_mes": 1588302000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 135.08,
+          "proporcion": 21.296588257551868,
+          "proporcion_start": 0,
+          "proporcion_end": 21.296588257551868
+        },
+        {
+          "año_mes": 1590980400000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 126.84,
+          "proporcion": 22.450749597323753,
+          "proporcion_start": 0,
+          "proporcion_end": 22.450749597323753
+        },
+        {
+          "año_mes": 1593572400000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 134.59,
+          "proporcion": 21.737866429782766,
+          "proporcion_start": 0,
+          "proporcion_end": 21.737866429782766
+        },
+        {
+          "año_mes": 1596250800000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 338.38,
+          "proporcion": 22.383182515743236,
+          "proporcion_start": 0,
+          "proporcion_end": 22.383182515743236
+        },
+        {
+          "año_mes": 1598929200000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 343.16,
+          "proporcion": 22.370565457176752,
+          "proporcion_start": 0,
+          "proporcion_end": 22.370565457176752
+        },
+        {
+          "año_mes": 1601521200000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 369.85,
+          "proporcion": 22.113337957094686,
+          "proporcion_start": 0,
+          "proporcion_end": 22.113337957094686
+        },
+        {
+          "año_mes": 1604199600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 390.34,
+          "proporcion": 22.083925025317814,
+          "proporcion_start": 0,
+          "proporcion_end": 22.083925025317814
+        },
+        {
+          "año_mes": 1606791600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 432.16,
+          "proporcion": 21.727610495779263,
+          "proporcion_start": 0,
+          "proporcion_end": 21.727610495779263
+        },
+        {
+          "año_mes": 1609470000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 535.61,
+          "proporcion": 22.570816933696303,
+          "proporcion_start": 0,
+          "proporcion_end": 22.570816933696303
+        },
+        {
+          "año_mes": 1612148400000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 443.74,
+          "proporcion": 22.18101112699571,
+          "proporcion_start": 0,
+          "proporcion_end": 22.18101112699571
+        },
+        {
+          "año_mes": 1614567600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 456.1,
+          "proporcion": 21.509179482100837,
+          "proporcion_start": 0,
+          "proporcion_end": 21.509179482100837
+        },
+        {
+          "año_mes": 1617246000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 504.09,
+          "proporcion": 21.95035924232527,
+          "proporcion_start": 0,
+          "proporcion_end": 21.95035924232527
+        },
+        {
+          "año_mes": 1619838000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 507.44,
+          "proporcion": 21.658443310057535,
+          "proporcion_start": 0,
+          "proporcion_end": 21.658443310057535
+        },
+        {
+          "año_mes": 1622516400000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 213,
+          "proporcion": 19.261550147852745,
+          "proporcion_start": 0,
+          "proporcion_end": 19.261550147852745
+        },
+        {
+          "año_mes": 1625108400000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 268.1,
+          "proporcion": 21.596236567801387,
+          "proporcion_start": 0,
+          "proporcion_end": 21.596236567801387
+        },
+        {
+          "año_mes": 1627786800000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 215.38,
+          "proporcion": 21.329398482837846,
+          "proporcion_start": 0,
+          "proporcion_end": 21.329398482837846
+        },
+        {
+          "año_mes": 1630465200000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 243.53,
+          "proporcion": 21.42712595134398,
+          "proporcion_start": 0,
+          "proporcion_end": 21.42712595134398
+        },
+        {
+          "año_mes": 1633057200000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 206.66,
+          "proporcion": 21.423758332210276,
+          "proporcion_start": 0,
+          "proporcion_end": 21.423758332210276
+        },
+        {
+          "año_mes": 1635735600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 218.56,
+          "proporcion": 20.8683032091127,
+          "proporcion_start": 0,
+          "proporcion_end": 20.8683032091127
+        },
+        {
+          "año_mes": 1638327600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 212.76,
+          "proporcion": 21.123278695034898,
+          "proporcion_start": 0,
+          "proporcion_end": 21.123278695034898
+        },
+        {
+          "año_mes": 1641006000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 239.57,
+          "proporcion": 19.378452926949613,
+          "proporcion_start": 0,
+          "proporcion_end": 19.378452926949613
+        },
+        {
+          "año_mes": 1643684400000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 595.16,
+          "proporcion": 16.97745600597902,
+          "proporcion_start": 0,
+          "proporcion_end": 16.97745600597902
+        },
+        {
+          "año_mes": 1646103600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 716.3,
+          "proporcion": 23.541204502505956,
+          "proporcion_start": 0,
+          "proporcion_end": 23.541204502505956
+        },
+        {
+          "año_mes": 1648782000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 275.05,
+          "proporcion": 19.791899029293884,
+          "proporcion_start": 0,
+          "proporcion_end": 19.791899029293884
+        },
+        {
+          "año_mes": 1651374000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 606.45,
+          "proporcion": 20.504107921695915,
+          "proporcion_start": 0,
+          "proporcion_end": 20.504107921695915
+        },
+        {
+          "año_mes": 1654052400000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 328.2,
+          "proporcion": 12.600589716813074,
+          "proporcion_start": 0,
+          "proporcion_end": 12.600589716813074
+        },
+        {
+          "año_mes": 1656644400000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 442.82,
+          "proporcion": 21.286966888435945,
+          "proporcion_start": 0,
+          "proporcion_end": 21.286966888435945
+        },
+        {
+          "año_mes": 1659322800000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 728.61,
+          "proporcion": 19.829953542044855,
+          "proporcion_start": 0,
+          "proporcion_end": 19.829953542044855
+        },
+        {
+          "año_mes": 1662001200000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 376.65,
+          "proporcion": 19.43047280043334,
+          "proporcion_start": 0,
+          "proporcion_end": 19.43047280043334
+        },
+        {
+          "año_mes": 1664593200000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 844.91,
+          "proporcion": 19.085773146506256,
+          "proporcion_start": 0,
+          "proporcion_end": 19.085773146506256
+        },
+        {
+          "año_mes": 1667271600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 900.84,
+          "proporcion": 19.279160897228746,
+          "proporcion_start": 0,
+          "proporcion_end": 19.279160897228746
+        },
+        {
+          "año_mes": 1669863600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 815.43,
+          "proporcion": 19.196028164438513,
+          "proporcion_start": 0,
+          "proporcion_end": 19.196028164438513
+        },
+        {
+          "año_mes": 1672542000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 891.12,
+          "proporcion": 19.300886508309528,
+          "proporcion_start": 0,
+          "proporcion_end": 19.300886508309528
+        },
+        {
+          "año_mes": 1675220400000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 962.75,
+          "proporcion": 19.326585673334026,
+          "proporcion_start": 0,
+          "proporcion_end": 19.326585673334026
+        },
+        {
+          "año_mes": 1677639600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 1015.65,
+          "proporcion": 9.871989269259927,
+          "proporcion_start": 0,
+          "proporcion_end": 9.871989269259927
+        },
+        {
+          "año_mes": 1680318000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 1053.89,
+          "proporcion": 18.940616586810634,
+          "proporcion_start": 0,
+          "proporcion_end": 18.940616586810634
+        },
+        {
+          "año_mes": 1682910000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 1241.81,
+          "proporcion": 20.021733837876535,
+          "proporcion_start": 0,
+          "proporcion_end": 20.021733837876535
+        },
+        {
+          "año_mes": 1685588400000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 1226.16,
+          "proporcion": 19.735298236126336,
+          "proporcion_start": 0,
+          "proporcion_end": 19.735298236126336
+        },
+        {
+          "año_mes": 1688180400000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 1405.6,
+          "proporcion": 19.838032681380536,
+          "proporcion_start": 0,
+          "proporcion_end": 19.838032681380536
+        },
+        {
+          "año_mes": 1690858800000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 1456.98,
+          "proporcion": 19.782028113404035,
+          "proporcion_start": 0,
+          "proporcion_end": 19.782028113404035
+        },
+        {
+          "año_mes": 1693537200000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 829.33,
+          "proporcion": 19.26004886250685,
+          "proporcion_start": 0,
+          "proporcion_end": 19.26004886250685
+        },
+        {
+          "año_mes": 1696129200000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 1263.54,
+          "proporcion": 19.464050797484774,
+          "proporcion_start": 0,
+          "proporcion_end": 19.464050797484774
+        },
+        {
+          "año_mes": 1698807600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 2138.81,
+          "proporcion": 19.861652554571002,
+          "proporcion_start": 0,
+          "proporcion_end": 19.861652554571002
+        },
+        {
+          "año_mes": 1701399600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 2832.35,
+          "proporcion": 20.560942376223103,
+          "proporcion_start": 0,
+          "proporcion_end": 20.560942376223103
+        },
+        {
+          "año_mes": 1704078000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 3905.89,
+          "proporcion": 20.78409211241179,
+          "proporcion_start": 0,
+          "proporcion_end": 20.78409211241179
+        },
+        {
+          "año_mes": 1706756400000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 4265.39,
+          "proporcion": 20.83801718380773,
+          "proporcion_start": 0,
+          "proporcion_end": 20.83801718380773
+        },
+        {
+          "año_mes": 1709262000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 5000.31,
+          "proporcion": 20.616689412337088,
+          "proporcion_start": 0,
+          "proporcion_end": 20.616689412337088
+        },
+        {
+          "año_mes": 1711940400000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 5000.56,
+          "proporcion": 20.244895315248574,
+          "proporcion_start": 0,
+          "proporcion_end": 20.244895315248574
+        },
+        {
+          "año_mes": 1714532400000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 5363.42,
+          "proporcion": 20.31232247519008,
+          "proporcion_start": 0,
+          "proporcion_end": 20.31232247519008
+        },
+        {
+          "año_mes": 1717210800000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 5838.9,
+          "proporcion": 20.604684990646742,
+          "proporcion_start": 0,
+          "proporcion_end": 20.604684990646742
+        },
+        {
+          "año_mes": 1719802800000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 6595.74,
+          "proporcion": 20.168867410461196,
+          "proporcion_start": 0,
+          "proporcion_end": 20.168867410461196
+        },
+        {
+          "año_mes": 1722481200000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 6562.25,
+          "proporcion": 20.64778461675937,
+          "proporcion_start": 0,
+          "proporcion_end": 20.64778461675937
+        },
+        {
+          "año_mes": 1725159600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 6269.46,
+          "proporcion": 20.900464216956838,
+          "proporcion_start": 0,
+          "proporcion_end": 20.900464216956838
+        },
+        {
+          "año_mes": 1727751600000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 6981.19,
+          "proporcion": 21.130462602581048,
+          "proporcion_start": 0,
+          "proporcion_end": 21.130462602581048
+        },
+        {
+          "año_mes": 1730430000000,
+          "producto": "Nafta (súper) entre 92 y 95 Ron",
+          "sum": 2300,
+          "proporcion": 29.677419354838708,
+          "proporcion_start": 0,
+          "proporcion_end": 29.677419354838708
+        },
+        {
+          "año_mes": 1730430000000,
+          "producto": "GNC",
+          "sum": null,
+          "proporcion": 0,
+          "proporcion_start": 100,
+          "proporcion_end": 100
+        },
+        {
+          "año_mes": 1730430000000,
+          "producto": "Gas Oil Grado 2",
+          "sum": null,
+          "proporcion": 0,
+          "proporcion_start": 100,
+          "proporcion_end": 100
+        }
+      ],
+      "transform": [
+        {"type": "formula", "expr": "toDate(datum['año_mes'])", "as": "año_mes"}
+      ]
+    },
+    {
+      "name": "source_0_color_domain_producto",
+      "values": [
+        {"producto": "GNC"},
+        {"producto": "Gas Oil Grado 2"},
+        {"producto": "Gas Oil Grado 3"},
+        {"producto": "Nafta (premium) de más de 95 Ron"},
+        {"producto": "Nafta (súper) entre 92 y 95 Ron"}
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "name": "unit",
+      "value": {},
+      "on": [
+        {"events": "pointermove", "update": "isTuple(group()) ? group() : unit"}
+      ]
+    },
+    {
+      "name": "param_2",
+      "update": "vlSelectionResolve(\"param_2_store\", \"union\")"
+    },
+    {
+      "name": "param_2_a_o_mes",
+      "on": [
+        {"events": [{"source": "view", "type": "dblclick"}], "update": "null"},
+        {
+          "events": {"signal": "param_2_translate_delta"},
+          "update": "panLinear(param_2_translate_anchor.extent_x, -param_2_translate_delta.x / width)"
+        },
+        {
+          "events": {"signal": "param_2_zoom_delta"},
+          "update": "zoomLinear(domain(\"x\"), param_2_zoom_anchor.x, param_2_zoom_delta)"
+        }
+      ]
+    },
+    {
+      "name": "param_2_proporcion",
+      "on": [
+        {"events": [{"source": "view", "type": "dblclick"}], "update": "null"},
+        {
+          "events": {"signal": "param_2_translate_delta"},
+          "update": "panLinear(param_2_translate_anchor.extent_y, param_2_translate_delta.y / height)"
+        },
+        {
+          "events": {"signal": "param_2_zoom_delta"},
+          "update": "zoomLinear(domain(\"y\"), param_2_zoom_anchor.y, param_2_zoom_delta)"
+        }
+      ]
+    },
+    {
+      "name": "param_2_tuple",
+      "on": [
+        {
+          "events": [{"signal": "param_2_a_o_mes || param_2_proporcion"}],
+          "update": "param_2_a_o_mes && param_2_proporcion ? {unit: \"\", fields: param_2_tuple_fields, values: [param_2_a_o_mes,param_2_proporcion]} : null"
+        }
+      ]
+    },
+    {
+      "name": "param_2_tuple_fields",
+      "value": [
+        {"field": "año_mes", "channel": "x", "type": "R"},
+        {"field": "proporcion", "channel": "y", "type": "R"}
+      ]
+    },
+    {
+      "name": "param_2_translate_anchor",
+      "value": {},
+      "on": [
+        {
+          "events": [{"source": "scope", "type": "pointerdown"}],
+          "update": "{x: x(unit), y: y(unit), extent_x: domain(\"x\"), extent_y: domain(\"y\")}"
+        }
+      ]
+    },
+    {
+      "name": "param_2_translate_delta",
+      "value": {},
+      "on": [
+        {
+          "events": [
+            {
+              "source": "window",
+              "between": [
+                {"source": "scope", "type": "pointerdown"},
+                {"source": "window", "type": "pointerup"}
+              ],
+              "type": "pointermove",
+              "consume": true
+            }
+          ],
+          "update": "{x: param_2_translate_anchor.x - x(unit), y: param_2_translate_anchor.y - y(unit)}"
+        }
+      ]
+    },
+    {
+      "name": "param_2_zoom_anchor",
+      "on": [
+        {
+          "events": [{"source": "scope", "type": "wheel", "consume": true}],
+          "update": "{x: invert(\"x\", x(unit)), y: invert(\"y\", y(unit))}"
+        }
+      ]
+    },
+    {
+      "name": "param_2_zoom_delta",
+      "on": [
+        {
+          "events": [{"source": "scope", "type": "wheel", "consume": true}],
+          "update": "pow(1.001, event.deltaY * pow(16, event.deltaMode))",
+          "force": true
+        }
+      ]
+    },
+    {
+      "name": "param_2_modify",
+      "on": [
+        {
+          "events": {"signal": "param_2_tuple"},
+          "update": "modify(\"param_2_store\", param_2_tuple, true)"
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "type": "group",
+      "name": "pathgroup",
+      "from": {
+        "facet": {
+          "data": "source_0",
+          "name": "faceted_path_main",
+          "groupby": ["producto"]
+        }
+      },
+      "encode": {
+        "update": {
+          "width": {
+            "field": {
+              "signal": null,
+              "datum": null,
+              "group": "width",
+              "parent": null
+            }
+          },
+          "height": {
+            "field": {
+              "signal": null,
+              "datum": null,
+              "group": "height",
+              "parent": null
+            }
+          }
+        }
+      },
+      "marks": [
+        {
+          "type": "area",
+          "name": "marks",
+          "from": {"data": "faceted_path_main"},
+          "sort": {"field": "x"},
+          "encode": {
+            "update": {
+              "tooltip": {
+                "signal": "{\"año_mes\": timeFormat(datum[\"año_mes\"], '%b %d, %Y'), \"producto\": isValid(datum[\"producto\"]) ? datum[\"producto\"] : \"\"+datum[\"producto\"], \"Suma\": format(datum[\"sum\"], \".2f\"), \"Proporción (%)\": format(datum[\"proporcion\"], \".2f\")}"
+              },
+              "orient": {"value": "vertical"},
+              "y": {"field": "proporcion_end", "scale": "y"},
+              "y2": {"field": "proporcion_start", "scale": "y"},
+              "fill": {"field": "producto", "scale": "color"},
+              "x": {"field": "año_mes", "scale": "x"},
+              "defined": {
+                "signal": "isValid(datum[\"año_mes\"]) && isFinite(+datum[\"año_mes\"]) && isValid(datum[\"proporcion\"]) && isFinite(+datum[\"proporcion\"])"
+              }
+            }
+          },
+          "style": ["area"],
+          "interactive": true,
+          "clip": true
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "time",
+      "domain": {"data": "source_0", "field": "año_mes"},
+      "range": [0, {"signal": "width"}],
+      "domainRaw": {"signal": "param_2[\"año_mes\"]"}
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": {
+        "data": "source_0",
+        "fields": ["proporcion_start", "proporcion_end"]
+      },
+      "range": [{"signal": "height"}, 0],
+      "zero": true,
+      "nice": true,
+      "domainRaw": {"signal": "param_2[\"proporcion\"]"}
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": {
+        "data": "source_0_color_domain_producto",
+        "field": "producto",
+        "sort": true
+      },
+      "range": "category"
+    }
+  ],
+  "axes": [
+    {
+      "scale": "x",
+      "tickCount": {"signal": "ceil(width/40)"},
+      "minExtent": 0,
+      "gridScale": "y",
+      "orient": "bottom",
+      "grid": true,
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "maxExtent": 0,
+      "labels": false,
+      "zindex": 0,
+      "gridScale": "x",
+      "ticks": false,
+      "grid": true,
+      "minExtent": 0,
+      "aria": false,
+      "domain": false,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "orient": "left"
+    },
+    {
+      "scale": "x",
+      "zindex": 0,
+      "labelAngle": 0,
+      "orient": "bottom",
+      "labelBaseline": "top",
+      "labelFlush": true,
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(width/40)"},
+      "format": "%Y-%m",
+      "grid": false,
+      "title": "Mes"
+    },
+    {
+      "scale": "y",
+      "grid": false,
+      "title": "Proporción del Precio Relativo (%)",
+      "tickCount": {"signal": "ceil(height/40)"},
+      "labelOverlap": true,
+      "zindex": 0,
+      "orient": "left"
+    }
+  ],
+  "title": {
+    "text": "Proporción Relativa del Precio de Productos por Mes",
+    "frame": "group"
+  },
+  "style": "cell",
+  "legends": [{"title": "Producto", "fill": "color", "symbolType": "circle"}],
+  "background": "white",
+  "padding": 5,
+  "width": 800,
+  "height": 400,
+  "config": {}
+};
+    vegaEmbed("#vis", spec, {mode: "vega"}).then(console.log).catch(console.warn);
+  </script>
+</body>
+</html>
