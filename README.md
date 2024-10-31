@@ -11,10 +11,10 @@ Este repositorio contiene un análisis detallado y visualizaciones interactivas 
 ## 🔍 Contenido del Análisis
 
 ### 1. Análisis Exploratorio de Datos (EDA)
-- Estadísticas descriptivas completas
+- Estadísticas descriptivas
 - Análisis de tendencias temporales
 - Identificación de patrones y anomalías
-- Distribución geográfica de precios
+- Fercuencia de precios
 
 👉 **[Ver EDA Completo](https://arey14.github.io/ECD2024DataViz/EDA.html)**
 
