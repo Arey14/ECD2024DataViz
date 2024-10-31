@@ -18,26 +18,30 @@ Este repositorio contiene un análisis detallado y visualizaciones interactivas 
 
 👉 **[Ver EDA Completo](https://arey14.github.io/ECD2024DataViz/EDA.html)**
 
-### 2. Comparación de Precios Relativos por Producto
+- Datos: 2820824
+- Fechas con datos consistentes: 2017 a 2024
+
+### 2. Pregunta 1: ¿Se ve un cambio de precios relativos entre los productos? ¿Cual es el producto más caro?
 - Análisis comparativo entre diferentes tipos de combustibles
 - Evolución temporal de precios relativos
 
 📊 **[Ver Análisis de Precios](https://arey14.github.io/ECD2024DataViz/Comparación%20precios%20relativos.html)**
 
-### 3. Bump Chart - Análisis Provincial
+### 3. Bump Chart - Pregunta 2: ¿Que provincias fueron las que tuvieron los precios más caros?
 #### Parte 1: Top 5 Provincias
 - Visualización dinámica de las principales provincias
 - Cambios en rankings a lo largo del tiempo
 - Patrones de comportamiento provincial
+* Interpolación lineal para provincias con datos faltantes
 
 🏆 **[Ver Bump Chart Top 5](https://arey14.github.io/ECD2024DataViz/Bump%20chart%20top%205.png)**
 
-#### Parte 2: Análisis Completo
-- Visualización Bump Chart con datos completos
+#### Parte 2: ¿Como era el ranking entre las provincias con datos completos?
+- Visualización Bump Chart de provincias con datos más completos
 
 📈 **[Ver Análisis Provincial Completo](https://arey14.github.io/ECD2024DataViz/bump%20chart%20provincias%20con%20datos%20completos.html)**
 
-### 4. Heat Map - Distribución de Estaciones de Servicio
+### 4. Heat Map - ¿En donde están distribuidas las surtidoras dentro del país?
 - Densidad de estaciones por región
 - Identificación de zonas de alta y baja cobertura
 
