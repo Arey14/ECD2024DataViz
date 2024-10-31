@@ -70,11 +70,7 @@ pip install -r requirements.txt
 
 3. Explore los notebooks y visualizaciones en el orden sugerido arriba.
 
-## 📊 Ejemplos de Visualizaciones
 
-<div align="center">
-    <img src="path_to_sample_visualization.png" alt="Sample Visualization" width="600"/>
-</div>
 
 ## 🤝 Contribuciones
 
