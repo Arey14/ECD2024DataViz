@@ -21,7 +21,6 @@ Este repositorio contiene un análisis detallado y visualizaciones interactivas 
 ### 2. Comparación de Precios Relativos por Producto
 - Análisis comparativo entre diferentes tipos de combustibles
 - Evolución temporal de precios relativos
-- Diferencias regionales en pricing
 
 📊 **[Ver Análisis de Precios](https://arey14.github.io/ECD2024DataViz/Comparación%20precios%20relativos.html)**
 
@@ -34,15 +33,12 @@ Este repositorio contiene un análisis detallado y visualizaciones interactivas 
 🏆 **[Ver Bump Chart Top 5](https://arey14.github.io/ECD2024DataViz/Bump%20chart%20top%205.png)**
 
 #### Parte 2: Análisis Completo
-- Panorama completo de todas las provincias
-- Tendencias y patrones generales
-- Comparativa integral
+- Visualización Bump Chart con datos completos
 
 📈 **[Ver Análisis Provincial Completo](https://arey14.github.io/ECD2024DataViz/bump%20chart%20provincias%20con%20datos%20completos.html)**
 
 ### 4. Heat Map - Distribución de Estaciones de Servicio
 - Densidad de estaciones por región
-- Correlación con variables demográficas
 - Identificación de zonas de alta y baja cobertura
 
 🗺️ **[Ver Heat Map Interactivo](https://arey14.github.io/ECD2024DataViz/heatmap.html)**
