@@ -20,8 +20,13 @@ Este repositorio contiene un análisis detallado y visualizaciones interactivas 
 
 - Datos historicos: 2820824
 - Fechas con datos consistentes tomados en historicos: 2017 a 2024
-
 - Datos surtidor: 36706
+
+- Features Usadas para los graficos:
+  - Tiempo
+  - Precio
+  - Tipo de producto
+  - Provincia
 
 ### 2. Stacked Area Relativo - Pregunta 1: ¿Se ve un cambio de precios relativos entre los productos? ¿Cual es el producto más caro?
 - Análisis comparativo entre diferentes tipos de combustibles
