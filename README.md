@@ -28,7 +28,7 @@ Este repositorio contiene un análisis detallado y visualizaciones interactivas 
   - Tipo de producto
   - Provincia
 
-### 2. Stacked Area Relativo - Pregunta 1: ¿Se ve un cambio de precios relativos entre los productos? ¿Cual es el producto más caro?
+### 2. Stacked Area Relativo - Pregunta 1: ¿Se ve un cambio de precios relativos entre los productos? ¿Cual es el producto más caro en el tiempo?
 - Análisis comparativo entre diferentes tipos de combustibles
 - Evolución temporal de precios relativos
 
