@@ -14,7 +14,7 @@ Este repositorio contiene un análisis detallado y visualizaciones interactivas 
 - Estadísticas descriptivas
 - Análisis de tendencias temporales
 - Identificación de patrones y anomalías
-- Fercuencia de precios
+- Frecuencia de precios
 
 👉 **[Ver EDA Completo](https://arey14.github.io/ECD2024DataViz/EDA.html)**
 
